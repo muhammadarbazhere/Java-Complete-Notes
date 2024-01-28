@@ -1,0 +1,43 @@
+package com.company;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.TimeZone;
+
+// CALENDAR CLASS METHODS
+//    .get(Calendar.DATE)
+//    .get(Calendar.YEAR)
+//    .get(Calendar.SECOND)
+//    .get(Calendar.MINUTE)
+
+public class GregorianCalenderClassAndTimeZone99 {
+    public static void main(String[] args) {
+//=================================================================================================
+//  CALENDER CLASS instance
+// video 97 k saray methods depricated haen
+        Calendar c = Calendar.getInstance();
+        System.out.println(c.getTime());
+
+        System.out.println(c.get(Calendar.DATE));
+        System.out.println(c.get(Calendar.SECOND));
+
+        System.out.println(c.get(Calendar.HOUR));
+
+System.out.println(c.get(Calendar.HOUR_OF_DAY) + ":" + c.get(Calendar.MINUTE) + ":" + c.get(Calendar.SECOND));
+//-----------------------------------------------------------------------------------------------
+// GregorianCalender INSTANCE
+
+        GregorianCalendar cal = new GregorianCalendar();  // abstract class hy qk upr class ni bnaiy
+        System.out.println(cal.isLeapYear(2020));
+
+//----------------------------------------------------------------------------------------------------
+// time zone
+
+        System.out.println(TimeZone.getAvailableIDs()[0]);
+        System.out.println(TimeZone.getAvailableIDs()[1]);
+        System.out.println(TimeZone.getAvailableIDs()[2]);
+        System.out.println(TimeZone.getAvailableIDs()[3]);
+
+//====================================================================================================
+    }
+}

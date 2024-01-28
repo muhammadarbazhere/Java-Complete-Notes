@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.HashSet;
+
+public class HashSet95 {
+    public static void main(String[] args) {
+//--------------------------------------------------------------------------------------------------
+        HashSet<Integer> hs = new HashSet<>();   // idhr integer k liye HashSet bnaya gya ha
+
+        hs.add(6);
+        hs.add(8);
+        hs.add(3);
+        hs.add(11);
+        hs.add(11);               // 11 srf aik dfaa hee print hoga
+        System.out.println(hs);
+            // answer =  [3, 6, 8, 11]
+//---------------------------------------------------------------------------------------------------------
+    }
+}

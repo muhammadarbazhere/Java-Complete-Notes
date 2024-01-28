@@ -1,0 +1,23 @@
+package com.company;
+
+public class HashingInJava94 {
+    public static void main(String[] args) {
+        /*
+        easy way of insertion in Array
+        f(x) = x % 10        // frz kiya hmay array me 33 ko insert krna hy tu hum iss ko
+                            10 say divide kray gay  jo reminder bchay ga ussy nmbr pr iss ko insert kr day ga
+                            33 % 10   reminder = 3  iss ko nmbr 3 pr insert kray gay
+      x    f(x)
+      72    2
+      11    1
+      18    8
+      92    2         idhr 72 or 92 ka jwab same hy tu inko hum aik linkedList say jor day gay
+                       iss trah 2 pr 72 or 92 dono aa jaey gay
+
+
+        iss me classes hoty haen jesay k
+        HashSet , HashMap , HashTable , LinkedHashMap ,
+
+         */
+    }
+}

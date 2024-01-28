@@ -1,0 +1,55 @@
+package com.company;
+// is video me Arraylist k baray me hy   jb k Linkedlist ki agli video hy92
+
+import java.util.*;   //  * likhnay say sbb aik sath import ho jatay haen
+
+public class Arraylist91 {
+    public static void main(String[] args) {
+//==================================================================================================
+
+        ArrayList<Integer> l1 = new ArrayList<Integer>();   //iss Arraylist me integer ko replace kya ja skta hy
+
+        ArrayList<Integer> l2 = new ArrayList<>(5);   // initial capacity bhee add kr
+                                                  // sktay haen java docs pr likha hova hy
+
+//        l2.add(11);
+//        l2.add(12);
+//        l2.add(15);
+
+
+        l1.add(3);
+        l1.add(6);
+        l1.add(5);            // iss array ko print krnay k liye nechay nechay for loop hy
+
+        for (int i=0; i<1;i++){
+            System.out.println(l1);
+        }  // agr srf l1 ko run krna ho to istrah kray gay
+
+//        l1.addAll(l2);  // ye l1 array me l2 k integer ko bhee add kr day ga
+//
+//        // array k drmiyan me agr koch add krna ho to iss trah kray gay
+//
+//       // l1.add(0,9);        // ye 0 index pr 9 add kr dy ga
+//        l1.set(1, 333);  // index 1 pr 333 aey ga
+//
+//     // l1.remove(2);  ye kisy khas index ko remove krnay k liye use hota hy
+//
+//        System.out.println(l1.contains(20));
+//       //  ye method btaey ga k index l1 me haey ya nhi hey
+//
+//       //   l1.clear();            ye oper walay saray mthods ko clear kr day ga
+//
+//        System.out.println(l1.indexOf(5));  // ye btata hy k l1 me 5 konsay nmbr pr hey
+//
+//        System.out.println(l1.lastIndexOf(5)); // ye btata hy l1 me dosra 5 konsay nmbr pr hy
+//
+//        for (int i=0; i<l1.size();i++){
+//            System.out.print(l1.get(i));  // idhr i likha to sary array ko print kiya  agr idhr
+//                                         // i ki jga 0 likhtay tu ye pehlay integer ko print krta
+//            System.out.print(", ");
+//// ye oper wly line lazmi hy wrna saray intejer mix ho jy gay is line say intejers k drmyan coma aey ga
+//        }
+
+//====================================================================================================
+    }
+}

@@ -1,0 +1,71 @@
+//package com.company;
+
+public class practiseSet12 {
+    public static void main(String[] args) {
+//-------------------------------------------------------------------------------------------------------
+//q1
+//what is the result of following expression
+
+//         float a = 7/4 * 9/2;
+//                              // left to right
+//                             //  7 ko 4 say div kya  phir 9 say multyply kya
+//                             // phir jo result aya uss ko 2 say div kya
+//        System.out.println(a);
+//------------------------------------------------------------------------------------------------------
+
+//q2
+// java programme to encrypt a grade by adding 8 to it. decrypt it to show the correct grade
+
+// frz kiya
+// agr mera dost abu k sath betha ho aur me us ko result k grade me  8 zyada add kr k btao ga
+// ta k mera dost uss 8 ko htta kr mera grade smjh lay or papa ko bhee pta na chlay ?
+
+        char grade ='B';
+                                  // incripting the grade by 8
+                           // me apnay grade b me 8 zyada add kr k btao ga
+                   // phir mera dost iss ko decript kr k iss me sy 8 kam kr k mera grade smjh lay ga
+       grade = (char)(grade + 8);
+        System.out.println(grade);  //answer j
+                                  // decrypting the grade by 8
+        grade = (char)(grade - 8);
+        System.out.println(grade); // answer B
+//-------------------------------------------------------------------------------------------------------
+
+//q3
+//use comparison operators to find out weather a given number is greater than the user entered num or not
+//
+
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        System.out.println(a>90);
+
+// a ki value add kray gay agr vo 90 say brri hogy tu  true answer  otherwise  false
+
+//-------------------------------------------------------------------------------------------------------
+
+//q4
+// v ki 2   mines  u ki 2        divided by  2 a s
+//
+
+//int v = 2;
+//int u = 4;
+//int a = 6;
+//int s = 8;
+//         // frz kiya   value of z = ?
+//int z = ( v*v - u*u ) / 2*a*s;
+//        System.out.println(z);
+
+//-------------------------------------------------------------------------------------------------------
+
+//q5
+//find the value of the following expression
+
+int a = 7 * 49 / 7  +  45 / 7;
+        // value of a = ?
+        System.out.println(a);
+ // ya
+      //  System.out.println(7 * 49 / 7  +  45 / 7);
+
+//------------------------------------------------------------------------------------------------------
+    }
+}

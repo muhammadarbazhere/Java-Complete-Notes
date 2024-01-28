@@ -1,0 +1,54 @@
+package com.company;
+
+// priority
+// 1:        thread.min priority(default priority 1)
+// 2:        thread.norm priority(default 5)
+// 3:       thread.max priority(default 10)
+
+
+//-----------------------------------------------------------------------------------------------------
+
+class MyThr1 extends Thread {
+
+    // constructor      by Alt insert
+    public MyThr1(String name) {
+        super(name);
+    }
+// method
+    public void run() {
+
+        int i = 0;
+        while (i < 100) {
+                        //  System.out.println("thank you " + this.getName());
+                             // iss say jb run kray ga tu ye thread ka name print kray
+                               // ga agr t1 print kiya tu tu ye uska name harry1 print kr day ga
+            System.out.println("thanks");
+            i++;
+        }
+
+    }
+//=======================================================================================================
+    public class ThreadPriorities74 {
+        public static void main(String[] args) {
+//======================================================================================================
+
+            MyThr1 t1 = new MyThr1("harry1");
+            MyThr1 t2 = new MyThr1("harry2");
+            MyThr1 t3 = new MyThr1("harry3");
+            MyThr1 t4 = new MyThr1("harry4");
+            MyThr1 t5 = new MyThr1("harry5 (most important)");
+            // jb thread ko chlaey gay tu most important wala sb say zyada show ho ga
+
+            t1.setPriority(currentThread().MAX_PRIORITY); // ye t5 k bd sb say zyada chlay ga
+            t2.setPriority(currentThread().MIN_PRIORITY); // ye sb say km chlay ga
+
+            t1.start();
+            t2.start();
+            t3.start();
+            t4.start();
+            t5.start();
+
+
+        }
+    }
+}

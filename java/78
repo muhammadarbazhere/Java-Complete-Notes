@@ -1,0 +1,50 @@
+package com.company;
+//  three types of error
+//  1; syntax error
+//  2; logical error
+//  3; runtime error(exceptions)
+//--------------------------------------------------------------------------------------------------
+
+public class ErrorsAndExceptionInJava78 {
+    public static void main(String[] args) {
+/*========================================================================================
+                          1:   SYNTAX ERROR
+ syntax likhtay wqt koi ghalty ho jaey
+
+        int a = 5
+        System.out.println(a);
+         ye us wqt tk aik syntax error ho ga jb tk hum 5 k agay semi collon ; nhi lga detay
+ or
+                           int a = 5;
+                            System.out.println(a+b);
+                          jb tk idher hum b ki value uper nhi detay ye ek syntax error hy
+or
+         a = 5;
+        System.out.println(a);
+        jb tk hum A say pehlay int nhi lgaey gay  ye syntax error rhay ga
+
+======================================================================================================
+                            LOGICAL ERROR
+ inko BUG bhee kehtay haen         programme chalta to hey lkin ghalat cheez Run krta hey
+
+        message directed wrongly      mtlb k hum bhejna kahi or chahtay thay lkin msg kahi or chla gya
+
+         iss ko agli video 79 me biyaan kya gya hey
+
+====================================================================================================
+                              RunTime Error
+ jis programme me syntax bhe thek likha ho  logic bhee thek ho lkin
+  runtime pr error show kr rha hey  jesa k jb user input dalta hey tu programme error
+   show kr jatan hey
+
+   ap ka proggrame saray cases k liye chal raha hey Except some cases frz kiya agr me koi
+   website bnata hon  or vo kisy dosry website say data pull kray   tu agr dosry web down ho jaey
+  tu mujhay iss k solution me kya krna chahye ta k mery website down na ho
+
+   frz kya hum agr kisy bank ko apni web say add kray or vo bank down he
+   tu hum users ko bta day gay k hmary website ki services sary thek hey lkin vo bank down ho chuka hey
+====================================================================================================*/
+
+    }
+}
+// run time or logical error ko agli video 79 me achi trah btaya gya hy

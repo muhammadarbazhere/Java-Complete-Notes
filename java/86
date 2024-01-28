@@ -1,0 +1,76 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class PractiseSet86 {
+    public static void main(String[] args) {
+//=======================================================================================================
+// q1
+// demonstrate  suntax/ logical / runTime orrors
+
+                     //   Syntax error
+        //   int a = 7                    semi collon nhi lgaya
+
+                     // logical error
+     //   int age = 78;
+    //    int year_born = 2000-78;                          not a correct logic   q k year born ko
+                                //    maloom krnay k liye hmay current year say 78 ko mines krna ho ga
+
+                  //  runTime error
+        // System.out.println(6/0);              q k 6 ko 0 say divide nhi kiya ja skta is
+                                              // ko solve krnay k liye try catch lgana hota hey
+
+//=======================================================================================================
+// q2
+// print hehe during illegalargument exception and haha during arithmatic exception
+
+try {
+    int a = 66/0;
+}
+// agr IllegalArgumentException aaty hey tu haha print kro
+
+catch (IllegalArgumentException e){
+    System.out.println("hehe");
+}
+// agr ArithmeticException aaty haey tu hehe print kro
+catch (ArithmeticException e){
+    System.out.println("haha");
+}
+
+//=====================================================================================================
+// q3
+// a programme that allows keep accessing an array until a valid index is given
+//  if max retries(mtlb try catch lgana) exceed 5 print 'error'
+
+boolean flag = true;
+
+        int[] marks = new int[3];
+        marks[0] = 7;
+        marks[1] = 56;
+        marks[2] = 6;
+
+        Scanner sc = new Scanner(System.in);
+
+        int i = 0;
+while (flag && i<5){
+
+    try {
+        System.out.println("enter the value of index");
+
+       int index = sc.nextInt();
+        System.out.println("the value of marks[index] is " + marks[index]);
+      //  break;
+    }
+    catch (Exception e){
+        System.out.println("invalid index");
+    }
+     i++;
+}
+
+if (i>=5){
+    System.out.println("ERROR");
+}
+
+//======================================================================================================
+    }
+}

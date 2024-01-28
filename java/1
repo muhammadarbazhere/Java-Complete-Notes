@@ -1,0 +1,25 @@
+package com.company;
+
+public class JavaInstallation1 {
+    public static void main(String[] args) {
+        /*
+
+jdk(java development kit)
+        go to google and
+        search
+        Install jdk  then
+        click on downloed jdk
+        now open it and install it
+
+intelliJ idea
+            go to google
+            search IntelliJ idea
+            downloed comunity version
+
+            then open jdk
+            click on add short cut
+            then install
+
+      */
+    }
+}

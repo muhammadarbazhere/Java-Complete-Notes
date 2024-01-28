@@ -1,0 +1,42 @@
+package com.company;
+// nesting ka mtlb try Catch k andr ek or try Catch
+import java.util.Scanner;
+
+public class NestedTryCatch82 {
+    public static void main(String[] args) {
+//=======================================================================================================
+        int[] marks = new int[3];
+        marks[0] = 7;
+        marks[1] = 56;
+        marks[2] = 6;
+
+        Scanner sc = new Scanner(System.in);
+                            // while loop lganay say programme us wqt tk chlta rhay ga jb tk correct
+                                           // answer na aa jaey  hum ko bar bar  run nhi krna prray ga
+
+        while (true){
+
+        System.out.println("enter the value of index");
+        int indx = sc.nextInt();
+
+            // pehlay ek Try Catch bnaey phir us me ek aur Try Catch daal daen
+        try{
+            System.out.println("well come");
+
+            try{
+                System.out.println(marks[indx]);
+            }
+            catch (ArrayIndexOutOfBoundsException e){
+                System.out.println("sorry this index could not exist");
+                System.out.println("Exception in level 2");
+            }
+        }
+
+        catch (Exception e) {
+            System.out.println("Exception in level 1");
+            System.out.println(e);
+        }
+        }
+//====================================================================================================
+    }
+}

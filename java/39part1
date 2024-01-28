@@ -1,0 +1,47 @@
+package com.company;
+//------------------------------------------------------------------------------------------------------
+//Employee class and its method  for q1
+
+class Employee1{
+    int sallery;
+    String name;
+
+        public int getSallery() {
+        return sallery;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String n) {               //ye method return koch nhi krta isy liye void likha
+        name = n;                                  // wrna name k sath String likhtay
+    }
+}
+//---------------------------------------------------------------------------------------------------------
+public class PractiseSet39part1 {
+     public static void main(String[] args) {
+//==========================================================================================================
+//q1
+//create a class Employee with following prpperties and methods
+                           //  following properties
+// Salary (property)(int)
+// name(property)(string)
+                          // following methods
+// getSallary(method returning int)
+// getName(method returning string)
+// setName(method changing name)
+
+        Employee1 harry = new Employee1();
+         harry.setName("code with harry");
+        System.out.println(harry.getName());
+
+         harry.sallery = 233;                  // harry ki sallary ko set kiya idher
+        System.out.println(harry.getSallery());
+
+//=======================================================================================================
+         //>>>>>>>>>>>>>>>>baaqi questions agli video me haen >>>>>>  PractiseSet39part2
+
+    }
+
+}

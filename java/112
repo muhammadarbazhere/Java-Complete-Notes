@@ -1,0 +1,66 @@
+package com.company;
+
+import java.io.FileWriter;
+//--------------------------------------------------------------------------------------------
+// class for q2
+class MyDeprecated{
+    @Deprecated
+    void meth1(){
+        System.out.println("i m meth1");
+    }
+}
+//------------------------------------------------------------------------------------
+// interface for q4
+interface MyInterface{
+    void play();
+}
+//-------------------------------------------------------------------------------
+public class PractiseSet112 {
+    public static void main(String[] args) {
+//================================================================================================
+//q2
+//creat a class and add a method with deprecated annotation.  what,s its effect on programme executiom
+
+//MyDeprecated d = new MyDeprecated();
+//d.meth1();   // d dot likhay tu meth1 qttaa hova aata mtlb k deprecated method hy ye
+        //iss liye uper @Deprecated annotation likh dyaa hey
+
+//===============================================================================================
+// q3
+// what is SuppressWarning?
+
+//============================================================================================
+// q4
+// create an interface and generate an instanse from it
+
+//        // treqa number 1
+//         MyInterface i = new MyInterface() {
+//             @Override
+//             public void play() {
+//                 System.out.println("i am play method of MyInterface");
+//             }
+//         };             //  idher  ;   zrory lgana hy
+//          i.play();
+
+          // treqa number 2
+//        MyInterface i =()-> System.out.println("i am play method of MyInterface ");
+//============================================================================================
+// q5
+// write a programme to generate multiplication table of a given number and write it to a file
+        
+//        int i = 5;
+//        String table = "";
+//        for (int j = 0; j < 10; j++) {
+//            table += i + "" + (j + 1) + "=" + i*(j + 1);
+//            table += "\n";
+//        }
+
+        try (FileWriter filewriter = new FileWriter("multiplicationTable.txt");){
+            filewriter.write("table");
+            filewriter.close();
+        } catch (Exception e) {      // IOException
+            System.out.println(e);
+        }
+//============================================================================================
+    }
+}

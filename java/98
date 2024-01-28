@@ -1,0 +1,19 @@
+package com.company;
+
+import java.util.Calendar;        // Calendar class java.util pkg me hoty hy
+
+public class CalendarClass98 {
+    public static void main(String[] args) {
+//---------------------------------------------------------------------------------
+
+  Calendar c = Calendar.getInstance();//Calendar class ek abstract class hoty hy qk uper iski class ni bnai
+
+  System.out.println(c.getCalendarType());   // iss ka answer Gregory hy
+  System.out.println(c.getTime());     // ye iska time btata hy
+  System.out.println(c.getTimeZone());         // ye time zone btata hy
+  System.out.println(c.getTimeZone().getID());  // ye time zone ki id btata hy
+
+// is kay methods agli video99 me haen
+//------------------------------------------------------------------------------------------
+    }
+}

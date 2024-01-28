@@ -1,0 +1,18 @@
+package com.company;
+
+// is ka answer video 11 me hy
+
+public class Exercise1video6boardPercentage {
+    public static void main(String[] args) {
+
+
+        /*
+        write a programme to calculate percentage of a given student in CBSE board exam.
+        His marks from 5 subjects must be taken as input from the keyboard(marks are out of 100)
+
+         */
+
+
+    }
+}
+

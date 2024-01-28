@@ -1,0 +1,46 @@
+package com.company;
+
+public class arrays26 {
+    public static void main(String[] args) {
+
+// classroom of 500 students-you have to store marks of these 500 students
+// you have 2 options:
+// 1; create 500 variables
+// 2; use arrays (recomended)
+
+//----------------------------------------------------------------------------------------------------
+//first method to create an array
+
+int [] marks = new int[5];
+marks[0] = 100;
+marks[1] = 60;
+marks[2] = 70;
+marks[3] = 90;
+marks[4] = 86;
+// new int ki value five hey is liye agr marks[5] ki value dalay to error aey ga
+        System.out.println(marks[4]);
+
+//-------------------------------------------------------------------------------------------------------
+//SECOND METHOD TO CREATE AN ARRAY
+
+//   int [] marks = {98, 45, 79, 99, 80};
+//              System.out.println(marks[4]);
+
+//-------------------------------------------------------------------------------------------
+//third METHOD TO CREATE AN ARRAY
+
+//        int [] marks ;
+//        marks = new int[5];
+//        marks[0] = 100;
+//        marks[1] = 60;
+//        marks[2] = 70;
+//        marks[3] = 90;
+//        marks[4] = 86;
+
+//        System.out.println(marks[4]);
+
+//------------------------------------------------------------------------------------------------------
+
+    };
+
+};

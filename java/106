@@ -1,0 +1,40 @@
+package com.company;
+/**
+ *
+ * javaDoc comment ko pakage likha jata hy
+ * class k liye java.comment ko class k uper lgatay haen
+ * lkin   agr method k liye java.comment lgana ho to us ko ussi method k uper likhay gay
+ *
+ */
+//========================================================================================================
+//tags for class
+                // following is called java.comment
+/**
+ * for a class discription can be added at the start of JavaDoc comment This class is to
+ * demonstrate What javadoc is? and how it is used in java industry?
+
+ * This is <i>italic</i> word<p>this is a new paragraph</p>
+ * @author Harry (CodeWithHarry)
+ * @since 2002
+ * @version 0.1
+ * @see <a href="https://docs.oracle.com/en/java/javase/20/"target="_blank">Java Docs</a>
+ */
+
+//  <a href =" link dalna hota hey idher">java docs</>
+//  lkin agr link ko new tab me kholna ho to
+//   <a href =" link"target=_blank>idher jo nam likhy gy us pr clik krnay pr voh link open hogy</>
+
+
+public class TagsForJavaDocs106 {  //---------------------------------------------------------------------
+// khud say aik method add kiya hy idhr
+    public void add(int a,int b){
+        System.out.println("the sum is = " + a+b);
+    }
+
+    public static void main(String[] args) {  //----------------------------------------------------------
+
+        System.out.println("this is my main method");
+
+//===================================================================================================
+    }
+}

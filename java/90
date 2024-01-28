@@ -1,0 +1,18 @@
+package com.company;
+
+public class HowToViewJavaDocumentation90 {
+    public static void main(String[] args) {
+        /*
+        how to view java docs of oracle on google
+
+        search on google
+        ...java 20 docs
+        ...click on   Java 20 documentation
+        ...then click on left side   API Documentation
+        ...then on the Upper Right Side there will be  Search Bar (here you can search what you want)
+        ... see constructors and began to make programme
+         */
+
+
+    }
+}

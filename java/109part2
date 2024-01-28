@@ -1,0 +1,22 @@
+package com.company;
+//=============================================================================================
+
+@FunctionalInterface
+interface DemoAno1{
+    void meth1();
+}
+
+//-------------------------------------------------------------------------------------------------
+public class AnonymusClassesAndLambdaExpression109Part2 {
+    public static void main(String[] args) {
+//--------------------------------------------------------------------------------------------------
+
+        DemoAno obj = ()->{                                   // - >  k drmiyan space nhi deny
+
+            System.out.println("i am method 1 from this lambda");
+        };                                               //  ;  lgana ni bholna wrna error aey ga
+        obj.meth1();
+
+//====================================================================================================
+    }
+}

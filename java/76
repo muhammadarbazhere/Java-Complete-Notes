@@ -1,0 +1,61 @@
+package com.company;  // next video 77 will be in vs code  Exercise5solution77
+//===================================================================================================
+// q1 = print GOOD MORNING thread and WELL COME thread
+// q2 = add a sleep method in well come thread of q1 to delay its execution for 200ms.
+// q3 = demonstrate getPriority and setPriority methods in threads
+// q4 = get state   of a given thread
+// q5 = get sequence    of the given thread
+//=================================================================================================
+
+class Arbaaz extends Thread{
+
+   public void run() {
+       while (true) {
+           System.out.println("good morning");
+       }
+
+   }
+}
+
+class Sami extends Thread {
+
+   public void run() {
+        while (true) {
+            System.out.println("wel come");
+
+            try {
+                Thread.sleep(200);
+            }
+            catch (Exception e) {
+                System.out.println(e);
+            }
+
+        }
+    }
+}
+//------------------------------------------------------------------------------------------------
+    public class PractiseSet76 {
+        public static void main(String[] args) {
+//==================================================================================================
+            Arbaaz a = new Arbaaz();
+            Sami s = new Sami();
+
+//            a.start();
+//            s.start();
+
+// priority k liye loop ko bnd krna hoga
+            a.setPriority(6);
+            s.setPriority(9);
+                               System.out.println(a.getPriority());
+                               System.out.println(s.getPriority());
+
+//          System.out.println(s.getState());   // is ko chlanay k liye s.start ko chlana lazmi haey
+                // answer = RunAble   q k ye iss situation me hey k isko run kiya ja skta hy
+
+
+//          sequence of the current thread
+            System.out.println(Thread.currentThread().getState());
+              // answer = RunAble
+
+        }
+    }

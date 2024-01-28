@@ -1,0 +1,47 @@
+package com.company;
+
+// byte + short = int,      short + int = int,        char + int = int,            char + short = int
+// long + float = float,     int = float= float,
+// long + double = double,       float +double = double
+
+public class ResultingDataTypeAndIncrementAndDecrement10 {
+    public static void main(String[] args) {
+
+//------------------------------------------------------------------------------------------
+// increment(increasing the value by 1) and decrement(decreasing the value by 1) operators
+
+        int i = 56;
+        int j = 60;
+        System.out.println(i++);
+        System.out.println(i);
+        System.out.println(++j);
+        System.out.println(j);
+
+//------------------------------------------------------------------------------------------
+        /*
+        a++  = first use the orignal value then increment ( increase 1 in the value)
+        ++a  = first increment the orignal value ( increase 1 ) and then use this incremented value
+
+       i++    :   first i is assigned i(56) then i is incremented i(56+1= 57 )
+       ++j    ;   first j is incremented j(6o+1 = 61 ) then the incremented value is assigned
+         */
+
+
+//------------------------------------------------------------------------------------------
+
+        int y = 7;
+        // ++y * 8 ko mloom kray
+        // phly y ko increment kray y(7+1 = 8 )
+        System.out.println(++y * 8);
+
+//------------------------------------------------------------------------------------------
+
+        char ch = 'a';
+        System.out.println(++ch);   // ch will be incremented and changed into b
+// answer is      b
+
+//------------------------------------------------------------------------------------------
+    }
+}
+//a++ , ++a  increment operators
+//a-- , --a   decrement operators

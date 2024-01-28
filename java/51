@@ -1,0 +1,17 @@
+package com.company;
+
+public class Exercise4video51Library {
+    public static void main(String[] args) {
+
+    /*
+    implement a library>>>>using java Class Library
+    Methods:
+    addBook,issueBook,returnBook,showAvailableBooks
+    properties:
+    ...array to store the available books,
+    ...array to store the issued books
+     */
+
+    }
+}
+//   >>>>>>>>>>>>  answer in     Exercise4solution61Library

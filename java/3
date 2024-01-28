@@ -1,0 +1,69 @@
+//package com.company;
+ // data types
+//      1: primitive data type        iss video me
+//      2: non primitive data type                      next vide me hy
+
+
+public class datatype3 {
+    public static void main(String[] args) {
+        // variables and data types    8 haen ye
+           // byte > short > int > float > long > double > char > boolean
+//------------------------------------------------------------------------------------------
+
+//byte :      its value ranges from -128 to 127
+                         // it takes  1 byte
+
+//------------------------------------------------------------------------------------------
+
+// short :   value ranges from    (2 ki power 16)divided by 2     say lay kr   (2 ki power 16)div by 2   -1
+                         // takes 2 byte   so 8 * 2 = 16
+
+//------------------------------------------------------------------------------------------
+
+//int :          2 ki power 32   baqi uper wala same
+                  // takes 4 bytes   so  4 * 8 = 32
+
+//------------------------------------------------------------------------------------------
+
+
+//float :    iss k akhir me f zror likhna hota hy
+              //takes 4 bytes
+                // example    =   5.6f
+        // chota hy tu float  brra hy to double
+
+//------------------------------------------------------------------------------------------
+
+//long :        2 ki power 64 baqi uper wala same
+               // takes 8 bytes  so   8 * 8 = 64
+        // akhir me chota ya brra l likhna hy
+
+//------------------------------------------------------------------------------------------
+
+//double :     iss k akhir me chota ya brra  d zrory lgana hota hy
+               //takes 8 bytes
+               //example       o.od
+
+//------------------------------------------------------------------------------------------
+
+//char :      value ranges from 0 to 65535
+                    // takes 2 byte
+        // iss ko singel cotes me likhtay haen   exp       char ch = 'A'
+
+//------------------------------------------------------------------------------------------
+
+//boolean          true or false waly value ko boolean kehtay haen
+
+                   // iss ki default value 0 hoty hy
+      // default boolean = false
+//------------------------------------------------------------------------------------------
+
+        //write a java programme to add three numbers
+        int num1 = 2;
+        int num2 = 3;
+        int num3 = 4;
+        int sumOfNumbers = num1 + num2 + num3;
+        System.out.println(sumOfNumbers);
+
+//------------------------------------------------------------------------------------------
+    }
+}

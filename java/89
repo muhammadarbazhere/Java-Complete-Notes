@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.*;
+
+public class CollectionsHeirarcy89 {
+    public static void main(String[] args) {
+        /*
+        iss me ye btaya gya hy k
+Arraylist , TreeSet , LinkedList , ArrayDeque , HashSet ,  HashMap , Hashtable ,LinkedHashMap
+         wgera wgera ye sbb  Java.Util  package me hotay haen
+         */
+
+       // ArrayList         // idhr jesay he Array list likha uper java.util.arraylist aa jata hy
+       // TreeSet            // idhr jesay he set likha uper java.util.set aa jata hy
+      //  HashSet            // same
+      //  LinkedList       // same
+      //  ArrayDeque        // same
+      //  HashMap           // same
+      //  Hashtable         // same
+       // LinkedHashMap    // same
+
+    }
+}

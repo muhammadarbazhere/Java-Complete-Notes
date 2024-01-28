@@ -1,0 +1,159 @@
+package com.company;
+
+public class PractiseSet35 {
+//------------------------------------------------------------------------------------------------------
+// method of q1
+ // ye practise set 25 k third question jesa hy
+
+//    static void multiplication(int n) {
+//        for (int i = 1; i <= 10; i++) {
+//            System.out.format( "%d X %d = %d\n " , n , i , n*i );
+//        }
+//    }
+
+//---------------------------------------------------------------------------------------------------------
+// method of q2
+// ye practise set 25 k first question ka ULTA  hy
+
+    static void pattern1(int n) {
+
+        for (int i = 0; i < n; i++) {
+
+            for (int j = 0; j < i+1 ; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println("");
+        }
+
+    }
+
+//-------------------------------------------------------------------------------------------------------
+// method of q3
+
+    // factorial ki jga koch or name bhee likh sktay haen
+    static int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n + factorial(n - 1);
+        }
+    }
+//------------------------------------------------------------------------------------------------
+// method of q4
+
+    static void pattern2(int n) {
+
+        for (int i = n; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            System.out.print("\n");
+        }
+    }
+//--------------------------------------------------------------------------------------------------------
+// method of q5
+
+    static int fib(int n) {
+        if (n == 1) {
+            return 0;
+        } else if (n == 2) {
+            return 1;
+        } else {
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+//--------------------------------------------------------------------------------------------------------
+// method o q6
+
+
+//------------------------------------------------------------------------------------------------
+// method of q8
+//    ye method nhi chal rahaa
+
+//    static void pattern1-rec(int n){
+//    if(n > 0){
+//        pattern1-rec(n - 1);
+//        for(int i=0; i<n;i++){
+//            System.out.print("*");
+//        }
+//        System.out.println();
+//        }
+//    }
+//--------------------------------------------------------------------------------------------------
+
+    public static void main(String[] args) {
+
+//===============================================================================================
+//q1
+// java method to print multiplication table of number n using function
+
+// method uper hy
+      //  multiplication(7);
+//===============================================================================================
+// q2
+//programme to print the following pattern using function
+// *
+// * *
+// * * *
+// * * * *
+
+// method uper hy
+        pattern1(4);
+//===============================================================================================
+// q3
+//write a recursive function to calculate sum of first n natural numbers
+
+// method uper hy
+
+        System.out.println(factorial(3));
+//=============================================================================================
+//q4
+// write a function to print the following pattern      // same as q1 of practiseSet25
+// * * * *
+// * * *
+// * *
+// *
+        // method uper hy
+        pattern2(4);
+//===============================================================================================
+//q5
+// function to print N(th) term of fibonacci seriesnusing RECURSION?
+
+// >>>>> fibonacci series - 0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+// 0+1 = 1,  1+1=2,  2+2=3,  3+5=8,  8+13=21,  13+21=34,.............
+// agr ginty krny ho tu fibonacci series ko 1 say ginnay gay  zero=1, one=2, two=3, three=4,......
+// pichlay 2 ko jmma kray gay
+
+        int result = fib(4);   //  is ka answer 2 hy q k chothay nmbr pr 2 ata hy
+        //fib10=34, fib9=21, fib8=13, fib7=8, fib6=5, fib5=3, fib4=2,fib3=1,fib2=1,fib1=0
+        System.out.println(result);
+//===============================================================================================
+// q6
+// write a function to find average of a set of numbers passed as arguments
+// hint = VariableaArguments33
+
+
+//========================================================================
+//q7
+// repeat q4 using recursion
+
+//===============================================================================================
+// q8
+// repeat q2 using recursion
+
+//           pattern1-rec(9);
+//===============================================================================================
+//q9
+// write a function to convert celciuus temperature to farenheit
+       // ni kiya
+
+//===============================================================================================
+//q10
+//repeat q3 using factorial iterative approach
+           // not recomended    can leave it
+         // ni kiya
+//==============================================================================================
+
+    }
+}

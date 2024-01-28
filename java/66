@@ -1,0 +1,42 @@
+package com.company;
+//                    modifiers
+// public        protected         private        default
+
+class C1{
+    public int x = 5;        // public
+    protected int y = 45;     // protected
+    int z = 6;                // no modifier
+
+    private int a = 78;       // private
+
+
+// aik hee class me hum   public(x),protected(y),default(z) aur private(a) modifiers ko use kr skty haen
+    public void meth1(){
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        System.out.println(a);
+    }
+}
+// subclass  jo class ko extend krty hey us me public aur protected modifiers use hotay haen
+//default aur private modifiers subclass me nhi aatay
+
+public class accessModifiers66 {
+    public static void main(String[] args) {
+
+        C1 c = new C1();
+      //   c.meth1();
+
+
+     //aik he Package me public(x),protected(y),default(z) modifiers ko use kr sktay haen LKIN
+     // aik hee package me hum PRIVATE(a) modifier ko use nhi kr sktay
+        System.out.println(c.x);
+        System.out.println(c.y);
+        System.out.println(c.z);
+                     //  System.out.println(c.a);       private modifier shows error
+    }
+}
+
+
+// WORLD me srf public modifiers aatay haen aur baqi teen nhi hotay
+//WORLD us ko kehtay haen jo k CLASS / SUBCLASS  or PACKAGE k ilava written ho

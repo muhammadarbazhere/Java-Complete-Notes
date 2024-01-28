@@ -1,0 +1,44 @@
+package com.company;
+//====================================================================================================
+// thread1
+class MyNewThread1 extends Thread {
+    public void run() {
+
+        while (true) {
+            System.out.println("i m a thread");
+
+            try {
+                Thread.sleep(455); //455 mili seconds k liye ye thread ni chlay ga bd me chal jaey ga
+            }
+            catch (Exception e) {
+                System.out.println(e);
+            }
+
+        }
+    }
+}
+//---------------
+//thread2
+class MyNewThread2 extends Thread {
+    public void run() {
+
+        while (true) {
+            System.out.println("thank you so much");
+        }
+
+    }
+}
+//--------------------------------------------------------------------------------------------------
+public class ThreadMethods75part2 {
+    public static void main(String[] args) {
+//-------------------------------------------------------------------------------------------------------
+
+        MyNewThread1 t1 = new MyNewThread1();
+        MyNewThr2 t2 = new MyNewThr2();
+
+        t1.start();
+        t2.start();
+
+//===================================================================================================
+    }
+}

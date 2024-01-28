@@ -1,0 +1,36 @@
+package com.company;
+// java is stored in the form of a long number
+// this long number holds the number of milliseconds passed   since 1 jan 1970
+
+// but java assumes that  1900  is the start year.
+
+// jb seconds mloom krnay hon tu java 1 jan 1970 say count
+// kray ga lkin jb years mloom krnay hongay tu java 1900 say count kray ga
+
+public class DateAndTime96 {
+    public static void main(String[] args) {
+/*//------------------------------------------------------------------------------------------
+ 1 year = 365 days
+ 1 day = 24 hours
+                    1 hour = 60 mnt
+                   1 mnt = 60 seconds       >>>> 1 hour = 60 * 60 = 3600 seconds
+                    1 second = 1,000 milli seconds
+=================================================================================================*/
+
+// java me 1 january 1970 say lay kr abhee tk milliseconds ka records pta krnay ka method>>>
+        System.out.println(System.currentTimeMillis());
+
+// agr milliseconds ki jga seconds maloom krnay ho tu  iss ko 1,000 sat divide kray gay
+        System.out.println(System.currentTimeMillis()/1000);
+
+// 1 jan 1970 say ab tk kitnay mints guzray haen
+        System.out.println(System.currentTimeMillis()/1000/3600);
+
+// 1 jan 1970 say ab tk kitnay HOURS guzray haen
+        System.out.println(System.currentTimeMillis()/1000/3600/24);
+
+// 1 jan 1970 say ab tk kitnay SAAL guzray haen
+        System.out.println(System.currentTimeMillis()/1000/3600/24/365);
+//=====================================================================================================
+    }
+}

@@ -1,0 +1,20 @@
+package com.company;
+
+public class Customization30 {
+    public static void main(String[] args) {
+
+        /*
+        file   setting  plugins
+search (material theme ui)  iss me different types hoty haen jesay k material oceanic etc   jo mrzy select kro
+        search (atom material icons)
+        install both
+
+         apperance and behavior   appearance    theme      material oceanic
+
+        fonts can also be changed here in appearance
+         */
+
+
+    }
+
+}

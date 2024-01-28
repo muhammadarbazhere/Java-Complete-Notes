@@ -1,0 +1,82 @@
+package com.company;
+//------------------------------------------------------------------------------------------------
+// class for q2
+class cellphone{
+    public void ring(){
+        System.out.println("RINGING");
+    }
+    public void vibrate(){
+        System.out.println("VIBRATING");
+    }
+    public void callFriend(){
+        System.out.println("calling ALi");
+    }
+}
+//-------------------------------------------------------------------------------------------------
+// class for q3
+class square{
+    int side;
+    public int area(){            // search on google   Area(A) of square = a ki 2   // side ko a likha hy
+        return side * side;
+    }
+    public int perimeter(){          // perimeter(P) of square = 4 a      // side ko a likha hy idhr
+        return 4 * side;
+    }
+}
+//-----------------------------------------------------------------------------------------------
+//class for Q5
+
+class tommy{
+    public void hit(){
+        System.out.println("hitting the enemy");
+    }
+    public void run(){
+        System.out.println("running from the enemy");
+    }
+    public void fire(){
+        System.out.println("firing on the enemy");
+    }
+}
+//-------------------------------------------------------------------------------------------------
+
+public class PractiseSet39part2 {
+    public static void main(String[] args) {
+//====================================================================================================
+// q2
+// create a class cellphone with a method to print  "ringing...." , "vibrating...."  etc
+// class uper likhy hy
+
+//    cellphone vivo = new cellphone();
+//    vivo.vibrate();
+//    vivo.ring();
+//    vivo.callFriend();
+
+//===================================================================================================
+// q3
+// create a class square with a method to initialize its side , calculating area , perimeter etc
+
+//    square sq = new square();
+//    sq.side = 3;
+//        System.out.println(sq.area());
+//        System.out.println(sq.perimeter());
+//===================================================================================================
+// q4
+// repeat q3 for a rectangle
+    // is me length attribute bhee add krna hota hy
+//====================================================================================================
+//q5
+// create a class tommy for rockstar games capable of hitting (print hitting), running,firing etc
+
+      tommy t1 = new tommy();
+      t1.fire();
+      t1.run();
+      t1.hit();
+
+//===================================================================================================
+// q6
+// repeat q3 for a circle
+
+//===================================================================================================
+
+    }
+}

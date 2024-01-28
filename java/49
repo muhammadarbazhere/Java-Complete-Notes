@@ -1,0 +1,45 @@
+package com.company;
+//====================================================================================================
+class Phone{
+    public void Music(){
+        System.out.println("playing music");
+    }
+
+    public void On(){
+        System.out.println("turning on phone");
+    }
+
+}
+//----------------
+class SmartPhone extends Phone {
+    public void Swagat() {
+        System.out.println("ap ka swagat hey");
+    }
+
+    @Override
+    public void On() {
+        System.out.println("turning on SmartPhone");
+        ;
+    }
+
+}
+//------------------
+
+
+public class DynamicMethodDispatch49 {                            //------------------------------------
+    public static void main(String[] args) {                      //------------------------------------
+
+//        Phone obj = new Phone();             // allowed
+//        SmartPhone vivo = new SmartPhone();   // allowed
+//        obj.music();                           // allowed
+
+        Phone obj = new SmartPhone(); // ALLOWED
+        //    SmartPhone obj1 = new Phone(); // NOT ALLOWED   IT PRODUCES ERROR
+
+        obj.Music();  //MUSIC wala aik hey jo k run ho jey ga
+        obj.On();    // On walay do haen iss liye derived wala on ho ga
+      //  obj.Swagat();  // vo method jo base class me ho lkin derived class me nhi vo Run ni hoga
+
+//==================================================================================================
+    }
+}

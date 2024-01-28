@@ -1,0 +1,42 @@
+package com.company;
+// agr hmaray pass koi khaas exception aa gaey haey tu us ko kesay solve kray gay
+// exception us wqt occur hoty haey jb hum nay programme me koch ghalat kya hey
+import java.util.Scanner;
+
+public class HandlingSpecificException81 {
+    public static void main(String[] args) {
+
+//==================================================================================================
+// ek array bnaey idher
+        int[] marks = new int[3];
+        marks[0] = 7;
+        marks[1] = 56;
+        marks[2] = 6;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Array index");
+        int indx = sc.nextInt();
+
+        System.out.println("Enter a number you want to divide the value with");
+        int number = sc.nextInt();
+
+        try{
+            System.out.println("the value of array index entered is " + marks[indx]);
+            System.out.println("the value of array divided by value-number is " + marks[indx]/number);
+        }
+        catch (ArithmeticException e){
+            System.out.println("ArithmaticException occured");
+            System.out.println(e);
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException occured");
+            System.out.println(e);
+        }
+        catch (Exception e){
+            System.out.println("some other Exception occured");
+            System.out.println(e);
+        }
+
+//========================================================================================================
+    }
+}

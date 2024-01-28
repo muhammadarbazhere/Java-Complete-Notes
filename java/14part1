@@ -1,0 +1,43 @@
+//package com.company;
+                     // commonly used String methods(part1)
+// .length (iss say word ki length mloom hoty mtlb k harry ki length 5 hy q k iss me 5 hrrof haen)
+
+// .tolowerCase (capital letters ko small letters me tbdeel krta hy lowerCase me tbdeel krta hy)
+
+// .toupperCase (small letters ko capital me tbdeel krta hy)
+
+// .trim (ye saray spaces ko htta kr orignal string fraham krta hy)
+                                                           // iss video me itnay hee btaey gaey haen
+                                                  //baqi agli video   StringMethods14part2   me haen
+
+public class StringMethods14part1 {
+    public static void main(String[] args) {
+//----------------------------------------------------------------------------------------------------
+        String s = "harry";
+        System.out.println(s.length());
+
+        //answer 5 hy q k Harry me 5 words haen  jo k iss ki length hy
+// s.length say words ki tadaad pta chlty hey
+//-------------------------------------------------------------------------------------------------------
+
+        String lowerstring = s.toLowerCase();
+        System.out.println(lowerstring);
+        //   s.toLowerCase     ye word ko tooLOWERcase me cnvrt krta hey  small letters me
+//----------------------------------------------------------------------------------------------------
+
+     String upperstring = s.toUpperCase();
+        System.out.println(upperstring);
+        // ye toLOWERcase ka ulta hota hey    capital letters me change krta hy
+
+//--------------------------------------------------------------------------------------------------------
+
+        String str = "   Harry   ";
+
+        System.out.println(str.trim());  // sary spaces ko remove kr day ga
+
+        System.out.println(str);  // ye sary dashes ko show kray ga
+//-----------------------------------------------------------------------------------------------------
+    }
+    // baqi methods   StringMethodspart2   me haen
+}
+

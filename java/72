@@ -1,0 +1,26 @@
+package com.company;
+
+public class ThreadLifeCycle72 {
+    public static void main(String[] args) {
+
+        /*
+        life cycle of a thread
+states of thread
+        1;  new  ;  thread abhee bna hy   mtlb k object tu bnn chuka lkin
+         abhee start method iss pr run nhi hova
+
+        2;  RunAble; start method lagg chuka   lkin abhee tk hum nay programme ko run nhi kiya
+
+        3;  Running;  jb hum nay programme ko Run kr diya
+
+        4;  non RunAble(blocked);  not elogible to run
+
+        5;  terminated;  jb hum nya run method ko chlaya tu ab vo End tk pahunch chuka hy
+
+         */
+
+
+
+
+    }
+}

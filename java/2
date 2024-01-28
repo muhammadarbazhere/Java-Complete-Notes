@@ -1,0 +1,22 @@
+package com.company;
+
+public class BasicStructureOfJava2 {
+    public static void main(String[] args) {
+        /*
+        public static void main(String[] args)   
+         iss ko likhnay k liye srf      main      likho
+        or enter press kro tu ye line intelliJ idea day deta hy
+        
+        class me bhut saray methods hotay haen
+        lkin function me srf aik hee function ya aik hee method hota hy
+        
+        
+        classes k liye PascalConvention use hoty hy
+        pehlay word ko capital likhna hota hy
+        
+        functions k liye  camelCaseConvention use hoty haen
+        pehlay word small
+        
+         */
+    }
+}

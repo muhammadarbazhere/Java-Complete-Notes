@@ -1,0 +1,55 @@
+package com.company;
+/*================================================================================================
+ek sy zyda Parent classes nhi hoty jin say hum koi Child class derive kr skkay
+iss liye hum interference ko istmaal krtay haen jo k parent classes k tor pr kaam aaty haen
+interference me extends ki jgaa implements ka word istmaal hota hey
+
+
+======================================================================================================*/
+
+interface Bicycle{       // can create interfaces more than one  then implement the other interface also
+
+// idhr methods k ilava koi property bhee add kr sktay haen jesa k
+    int a = 45;
+// methods
+   void applyBrake(int decrement);  // ye interface hey is liye applyBrake k agay body nhi aey gy
+   void speedUp(int increment);
+}
+//---------------------------------------------------------------------------------------------------
+class AvonCycle implements Bicycle {
+
+   public void blowHorn() {
+        System.out.println("pee pee , poo poo");
+    }
+                          //interface ko implement kya hy tu idhr usky dono methds bhe ay gay
+    public void applyBrake(int decrement) {
+        System.out.println("applying brake");
+    }
+
+    public void speedUp(int increment) {
+        System.out.println("applying speedup");
+    }
+}
+
+//---------------------------------------------------------------------------------------------------
+
+    public class interfaces55 {
+        public static void main(String[] args) {
+
+// -----------------------------------------------------------------------------------------------------
+
+            AvonCycle harryycycle = new AvonCycle();
+            harryycycle.applyBrake(1);
+
+            //   can create properties in interfaces
+            System.out.println(harryycycle.a);
+
+            //cannot modify the properties in interfaces as they are final
+            // a ki qemat uper fix hey tu hum isko modify nhi kr stkay   error aey ga
+            // harryycycle.a = 454;
+            // System.out.println(harryycycle.a); // shows error
+
+//=====================================================================================================
+        }
+    }
+

@@ -1,0 +1,22 @@
+package com.company;
+
+public class EscapeSequence114 {
+    public static void main(String[] args) {
+
+
+        // agr hum ko kisy line k drmiyan me   double quotes(")  lgana ho to iss trah kray gay
+        System.out.println("i am arbaz \" there is a double quote");
+
+        // aik line say dosry line pr aanay k liye   backSlash n \n lgatay haen
+        System.out.println(" i am arbaz \n there is new line");
+
+        // agr line k drmiyan  me slash likhna ho tu iss trah likhay gay
+        System.out.println(" i am arbaz \\ there is a back slash");
+
+
+        // not too much important
+        // agr aik hee line me   drmiyan me tab k liye lines chorni hon tu iss trah kray gay
+        System.out.println("i m arbaz \t now there is a space of a tab");
+
+    }
+}

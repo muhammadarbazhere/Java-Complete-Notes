@@ -1,0 +1,27 @@
+package com.company;
+
+public class terminologiesInOOP37 {
+    public static void main(String[] args) {
+        /*
+        oops terminologies
+
+        1; abstraction; hiding internal details
+        (abstract noun means jin ko hum haath nhi lga sktay khiyali haen)
+        example>>  using a mobile without knowing that how it was made
+
+        2; encapsulation;  the act of putting various components together(in a capsule)
+         bhut sary cheezo ko aik dbbay me put together kr dena
+        example>>  laptop consist of wifi,speaker,storage,camera etc in a single box
+
+
+        3; inheritance; the act of deriving new things from existing things
+        example>>     phone-->> smart phone
+                      Rikshaw-->> E-Rikshaw
+
+        4; polymorphism;  one entity many forms
+        example>>>   smart phone ( smartPhone ko hum phone, calculator,  cameera music player
+        k tor pr istmaal kr sktay haen
+
+         */
+    }
+}

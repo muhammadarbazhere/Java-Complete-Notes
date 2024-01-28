@@ -1,0 +1,41 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Exercise1solution11 {
+    public static void main(String[] args) {
+
+              /*
+        write a programme to calculate percentage of a given student in CBSE board exam.
+        His marks from 5 subjects must be taken as input from the keyboard(marks are out of 100)
+
+         */
+
+//------------------------------------------------------------------------------------------
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter your physics marks : ");
+        float physics = sc.nextFloat();
+
+        System.out.println("enter your english marks : ");
+        float english = sc.nextFloat();
+
+        System.out.println("enter your chemistry marks : ");
+        float chemistry = sc.nextFloat();
+
+        System.out.println("enter your mathematics marks : ");
+        float mathematics = sc.nextFloat();
+
+        System.out.println("enter your urdu marks : ");
+        float urdu = sc.nextFloat();
+
+
+        float percentage = ( (physics + english + chemistry + mathematics + urdu) /500) * 100;
+
+        System.out.println("percentage : ");
+        System.out.println(percentage);
+
+//----------------------------------------------------------------------------------------------
+
+    }
+}

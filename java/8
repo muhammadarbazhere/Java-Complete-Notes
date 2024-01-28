@@ -1,0 +1,52 @@
+package com.company;
+
+// 5 + 2 me 5 or 2 operand haen jb k  +  ko operator khtay haen
+
+
+public class operators8 {
+    public static void main(String[] args) {
+/*
+        // types of operators
+
+  1;  arithmatic operators( + , - , * , / , % , ++ , -- )
+
+  2;  assignment operators( = , += )
+
+  3;  comparison operator( == , > ,  >= , < , <= )     // relational operators
+
+  4;  logical oprator( && , || , ! )
+
+  5;  BitWise operators( & , | )operates bitwise
+
+ */
+//----------------------------------------------------------------------------------------------------
+// arithmetic operator
+        int a = 4;
+        int b = 3+a;      // +
+        System.out.println(b);
+//------------------------------------------------------------------------------------------------
+//assignment operators
+                                  int c = 9;            // +=
+                                  c += 1;
+                                  System.out.println(c);   // answer c = 10
+//----------------------------------------------------------------------------------------------------
+// comparison operators                                    ye true ya false show krtay haen
+        System.out.println(10==10);    // iss ka answer true aey ga
+        System.out.println(5>=6);     // iss ka answer false aya ga
+//---------------------------------------------------------------------------------------------------
+//logical operators
+
+        System.out.println(6>2 && 6<20);     // answer true
+//agr drmiyan me &&(and and) aey  tu dono side ki values ka true hona lazmi haey phir hee true answer aey ga
+        System.out.println(7<8 || 8<7);  //answer true
+// agr drmiyan me ||(or or) aey tu dono values me say kisy aek k true anay say answer true aey ga
+
+//--------------------------------------------------------------------------------------------------------
+
+
+
+
+
+    }
+}
+

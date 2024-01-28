@@ -1,0 +1,48 @@
+package com.company;
+
+public class AssociativityAndPrecedense9 {
+    public static void main(String[] args) {
+//------------------------------------------------------------------------------------------------
+
+//int a = 6*5-34/2;
+        // = 30-34/2
+        // = 30-17
+        // = 13
+//System.out.println(a);
+
+//------------------------------------------------------------------------------------------
+                    // associativity
+        // agr value k start or end pr   * ya /    hon tu associativity    left to right
+        //   + ya -       left to right
+
+        //   -- ya ++      right to left
+                    // precedense
+        // precedense of * and / is 12
+        // precedense of + and - is 11
+        //precedense of () is 14  highest by any
+//------------------------------------------------------------------------------------------
+
+//int b =60/5-34*2;
+             // = 12-34*2
+             // = 12-68
+            // = -56
+//System.out.println(b);
+
+//-----------------------------------------------------------------------------------------------------
+//quick quiz
+//                                x mines y  divided by 2
+        int x = 6;
+        int y = 1;
+        int z = x * y/2;
+//------------------------------------------------------------------------------------------------------
+//                              b ki 2    mines 4ac  div by 2a
+        int a = 5;
+        int b = 1;
+        int c = 4;
+        int k = ( b*b - 4*a*c) / (2*a);
+        // ye left to right solve ho ga q k start or end pr * * hy
+        System.out.println(k);
+//----------------------------------------------------------------------------------------------
+    }
+}
+

@@ -1,0 +1,39 @@
+package com.company;
+//---------------------------------------------------------------------------------------------------
+
+// super ka istmal pichli video 46 me sekha tha
+// AGR HUM DERIVED CLASS ME MOJOD HAEN    OR HUM  BASE CLASS K KISY METHOD   YA CONSTRUCTOR
+// KO BHEE IDHR HEE DERIVED CLASS ME CALL KRNA CHAHTAY HAEN TU HUM SUPER KEY WORD USE KRTAY HAEN
+
+
+//  this ka istmal idher hey
+
+class EkClass{
+    int a;
+
+    // getter
+    public int getA() {
+        return a;
+    }
+    // IDHER CONSTRUCTOR MOJOD HY NECHAY  ISS LIYE setter KI ZRORAT NHI
+
+                           // USE OF THIS
+    // agr method me dono variable  same haey tu THIS ko istmal krna hoga pehlay
+    // q k agr this use nhi kray gay tu cmputer confuse ho jaey ga k kis variable ka kam kya hy
+// EXAMPLE;       nechay agr  a=a ho to error aey ga lkin agr this.a=a ho to prfct hy.
+
+                                // CONSTRUCTOR
+    public EkClass(int a) {
+      this.a = a;
+     }
+
+}
+
+public class thisANDsuper47 {                                  //---------------------------------------
+    public static void main(String[] args) {                   //--------------------------------------
+
+        EkClass e = new EkClass(65);
+        System.out.println(e.getA());
+//==============================================================================================
+    }
+}

@@ -1,0 +1,23 @@
+package com.company;
+
+public class Exercise6CustomCalculator87 {
+    public static void main(String[] args) {
+
+        /*
+        exercise 6
+        you have to create a custom calculator with following operations
+        1;    +(addition)
+        2;    -(subtraction)
+        3;    *(multiplication)
+        4;    /(division)
+
+        which throws the following exceptions
+        1.  invalid input Exception   misal k tor pr 8 & 9
+        2.  cannot divide by 0 Exception
+        3.  Max input Exception  if any of the inputs is greater than 100,000
+        4.  Max multiplier reached Exception-
+         -don't allow any multiplication input to be greater than 7,000
+         */
+    }
+    // iss ka answer video 103 me hy
+}

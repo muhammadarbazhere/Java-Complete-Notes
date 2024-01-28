@@ -1,0 +1,52 @@
+package com.company;
+//anonumus classes or lambda expressions ko use krna necessary nhi hy    apni mrzy k mutabik
+//=======================================================================================================
+                            // part 1
+@FunctionalInterface
+interface DemoAno{
+    void meth1();
+}
+//-------------------------
+class Harry implements DemoAno{
+    @Override
+    public void meth1() {
+        System.out.println("this is meth1 of HarryFunc class");
+    }
+}
+//----------------------------
+class AnonymussDemo implements DemoAno{
+    public void play(){
+        System.out.println("hello i am a play method of anonymuss class");
+    }
+
+    @Override
+    public void meth1() {
+        System.out.println("i am method1");
+    }
+}
+//-----------------------------------------------------------------------------------------------------
+public class AnonymusClassesAndLambdaExpression109Part1 {
+    public static void main(String[] args) {
+//-----------------------------------------------------------------------------------------------------
+
+// method 1
+//        DemoAno obj = new AnonymussDemo();
+//        obj.meth1();                       //ya ye wala method use kro  ya nechay wala  koi aik
+//---------------------------------
+// method 2
+//        DemoAno obj = new Harry();
+//        obj.meth1();
+//----------------------------------
+// method 3
+// interface ka object is trah bnaya jata hy
+        DemoAno obj = new DemoAno() {
+            @Override
+            public void meth1() {
+                System.out.println("i am method1 of the interface ");
+            }
+        };                     /// idher agr braket k bd  ;  na lgaya tu error aey ga
+        obj.meth1();
+
+//===============================================================================================
+    }
+}

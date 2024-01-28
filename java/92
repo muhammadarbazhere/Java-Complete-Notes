@@ -1,0 +1,51 @@
+package com.company;
+import java.util.*;
+
+public class LinkedList92 {
+    public static void main(String[] args) {
+        // idher sy agay aksar pichli video sy copy kya bs idher ArrayList ki
+        // jga LinkedList likha or LinkedList k koch izafy methods bhee likhay
+//==================================================================================================
+
+        LinkedList<Integer> l1 = new LinkedList<Integer>();
+        LinkedList<Integer> l2 = new LinkedList<>();
+
+
+        l2.add(11);
+        l2.add(12);
+        l2.add(15);
+
+        l1.add(3);
+        l1.add(5);
+        l1.add(2);
+        l1.add(6);
+        l1.add(5);
+
+        l1.addAll(l2);
+
+        // l1.add(0,9);
+       // l1.set(1, 333);
+
+        // l1.remove(2);
+
+        // kafy saray mthods aesay haen jo srf LinkedList me hota hy ArrayList me nhi hota
+        //addLast ya addFirst mthods LinkedList me hota hy ArrayList me nhi hota
+        l1.addLast(5555);
+        l1.addFirst(999);
+
+
+        System.out.println(l1.contains(20));
+        //   l1.clear();
+
+        System.out.println(l1.indexOf(5));
+        System.out.println(l1.lastIndexOf(5));
+
+        for (int i=0; i<l1.size();i++){
+            System.out.print(l1.get(i));
+            System.out.print(", ");
+        }
+
+
+//=====================================================================================================
+    }
+}

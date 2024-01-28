@@ -1,0 +1,23 @@
+package com.company;
+
+public class NoMultipleInheritance56 {
+    public static void main(String[] args) {
+        /*
+        multiplication inheritance is not supported in java therefore we use interface
+
+>        agr hum do parent classes bna day
+        phir un say aik derived class bnaey tu java confuse ho jaey ga k kis
+        parent class k methods lo run krna hy
+
+
+>        derived class bnanay k liye hum ussay aik parent class say Extend krtay
+        haen   phir multiple intefaces ko us say implement kr sktay haemn
+
+               1                 2                  3                        4
+cell phone(class) >>GPS(intereference) >>camera(interference) >>mediaPLAYER(interference)
+       \-----------------|---------!!5!!---------|-----------------------|
+                |______smart phone(derived class)______|
+
+         */
+    }
+}

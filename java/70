@@ -1,0 +1,65 @@
+package com.company;
+//======================================================================================================
+//  creating a thread   by Extending Thread class
+
+
+                // CREATING A THREAD
+// it has two ways
+// (1):    creating a thread   by Extending Thread class
+// (2):    creating a thread   by implementing RunAble interface
+
+//          thread k methods ko call krnay k liye     start();    method ko likha jata hey
+//                     ye uper jo methods bhee hongay  un sbb ko call kr lay ga
+
+//===============================================================================================
+
+// idher class ka nam mythread1 hey jb k thread ko likhnay say ye intellij idea ki
+// traf say khud aa jaey ga
+
+// thread1
+class MyThread1 extends Thread{
+
+    public void run(){
+
+        int i = 0;            // for loop is not recomended
+        while (i<100) {  // agr idhr 1<100 ji jga srf True likh day  tu ye unlimited run ho ga
+
+            System.out.println("my thread 1 is running");
+        i++;
+        }
+    }
+}
+//------------------------------
+
+// thread2
+class MyThread2 extends Thread{
+
+    public void run(){
+
+        int i = 0;
+        while (i<100) {
+
+            System.out.println("my thread second  is running");
+        i++;
+        }
+    }
+}
+//----------------------------------
+
+public class CreatingThreadByExtendingThreadClass70 {
+    public static void main(String[] args) {
+
+//-------------------------------------------------------------------------------------------------------
+
+        MyThread1 t1 = new MyThread1();
+        MyThread2 t2 = new MyThread2();
+
+       t1.start();
+       t2.start();
+
+
+//        agli video71 me   by implementing a runable interface jis ka method bhut different hy
+
+//==================================================================================================
+    }
+}

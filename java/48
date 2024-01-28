@@ -1,0 +1,47 @@
+package com.company;
+//  method     OVER LOEDING     OR      OVER RIDING      me bhut farq haey
+// over loeding me 1 class me 2 aik jesay method hotay haen   aik me int dya gya hota hey dosray me nhi
+// agr 2 classes me 2 aik jesay methods hon to vo OVVERRIDE kr rhay ho gy
+// yani k jo method base me tha ap nay us ko derived me re-define kr dya hey
+// dosray same method say phlay @Ovverride likh kr aa jaey ga
+//========================================================================================================
+class Arbaz{
+
+    public int a;
+                                // khud sy koi bhe method bna dy gay
+    public void method1(){
+        System.out.println("i m method 1 of class Arbaz");
+    }
+    public void method2(){
+        System.out.println("i am method 2 of Class Arbaz");
+    }
+
+}
+
+// method2 ko do mrtba shamil kya hey jo k method overriding kehlata hy
+
+class Baloch extends Arbaz{
+
+    @Override                // idher @override likha hova hy  mtlb ye method uper nechay 2 mrtba aya hy
+    public void method2(){
+        System.out.println("i am method 2 of class Baloch");
+    }
+    public void method3(){
+        System.out.println("i m method 3 of class Baloch");
+    }
+}
+
+public class methodOverRiding48 {                   //--------------------------------------------------
+    public static void main(String[] args) {          //-----------------------------------------------
+
+        Arbaz a = new Arbaz();
+        a.method1();
+        a.method2();
+
+        Baloch b = new Baloch();
+        b.method2();
+    //    b.method3();
+
+//========================================================================================================
+    }
+}

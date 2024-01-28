@@ -1,0 +1,49 @@
+package com.company;
+// (2):  creating thread by IMPLEMENTING a runable interface
+
+//====================================================================================================
+// thread1
+class MyThreadRunable1 implements Runnable{
+
+    public void run(){
+        int i = 0;
+        while (i<100) {   // agr idhr 1<100 ji jga srf True likh day  tu ye unlimited run ho ga
+
+            System.out.println("i am a threadRunable by using Runnable");
+            i++;
+        }
+    }
+}
+//---------------------
+// thread2
+class MyThreadRunable2 implements Runnable{
+
+    public void run(){
+
+        int i = 0;
+        while (i<100) {
+
+            System.out.println("i am a threadRunable 2");
+            i++;
+        }
+    }
+
+}
+//------------------------
+
+public class CreatingThreadByImplementingRunableInterface71 {               //---------------------------
+    public static void main(String[] args) {                               //-----------------------------
+
+
+        MyThreadRunable1 bullet1 = new MyThreadRunable1();//is k mthods drect start(); sy cal nhi hotay
+        Thread gun1 = new Thread(bullet1);
+
+        MyThreadRunable2 bullet2 = new MyThreadRunable2();
+        Thread gun2 = new Thread(bullet2);
+
+        gun1.start();
+        gun2.start();
+
+//=====================================================================================================
+    }
+}

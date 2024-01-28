@@ -1,0 +1,118 @@
+package com.company;
+
+public class PractiseSet25 {
+    public static void main(String[] args) {
+//-----------------------------------------------------------------------------------------------
+//q1
+//programme to print the following pattern
+// * * * *
+// * * *
+// * *
+//  *
+
+//        int n = 4;
+//        for (int i=n; i>0; i--) {
+//            for (int j=0; j<i; j++) {
+//                System.out.print("*");
+//            }
+//            System.out.print("\n");
+//        }
+
+//------------------------------------------------------------------------------------------------------
+//q2
+//programme to sum first n even numbers using for loop
+// nechay walay sval me pehlay four even numbers( 0,2,4,6) ka sum nikalna hy jo k 12 hy
+
+//      int sum=0;
+//
+//        int e =4;
+//
+//      for (int n=0; n<4; n++){
+//          sum = sum + (2*n);
+//      }
+//        System.out.println(sum);
+                                 // answer 12
+
+//--------------------------------------------------------------------------------------
+//q3
+//programme to print a multiplication table of given number n
+
+//   int n = 5;
+//   for (int i=1; i<=10; i++){
+//       System.out.printf("%d X %d = %d\n " , n , i , n*i );
+//   };
+
+//----------------------------------------------------------------------------------------------
+//q4
+//print multiplication table of 10 in reverse order
+
+//        int n = 10;
+//        for (int i=10; i>=1;i--){
+//            System.out.printf("%d X %d = %d\n " , n , i , n*i);
+//        };
+
+//--------------------------------------------------------------------------------------------------
+//q5
+//find factorial of a given number using for loop
+
+//------------------------------------------------------------------------------------------------
+//q6
+//find factorial of a given number using WHILE loop
+     // what is factorial    n = n * n-1 * n-2 * n-3 .........1
+        // n ko us wqt tk multiply krtay raho jb tk ap ko 1 na mil jaey
+        // 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+
+        int n = 5;
+        int i = 1;
+
+        int factorial = 1;
+
+        while (i<=n){
+            factorial *= i;
+                    i++;
+        }
+        System.out.println(factorial);
+
+//----------------------------------------------------------------------------------------------
+//q7
+// repeat q1 by using while loop
+
+
+
+//-------------------------------------------------------------------------------------------------
+//q8
+//what can be done using one type of loop can also be done using other two types of loops- true or false
+     // answer = true
+
+//-----------------------------------------------------------------------------------------------
+//q9
+//programme to calculate the sum of numbers accuring in the multiplication table of 2
+
+//           int n = 8;
+//
+//           int sum = 0;
+//
+//   for (int i=1; i<=10; i++){
+//       sum += n*1;
+//   };
+//        System.out.println(sum);
+
+//------------------------------------------------------------------------------------------------------
+//q10
+// A do while loop is executed:
+// 1, at least once
+// 2, at least twice
+// 3, at most once
+
+
+        // answer   =   at least once
+
+//----------------------------------------------------------------------------------------------
+//q11
+// repeat q2 using while loop
+
+//--------------------------------------------------------------------------------------------------
+
+    };
+};

@@ -1,0 +1,14 @@
+package com.company;
+
+public class GeneratingOurOwnJavaDocs105 {
+    public static void main(String[] args) {
+        /*
+        click three dosts on the left upper side of screen
+        click on tools
+        click on Generate javaDoc
+        choose if you want to generate javaDoc for whole project or a for a single file
+        give location
+        Press Generate
+         */
+    }
+}

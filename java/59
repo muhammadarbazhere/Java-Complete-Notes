@@ -1,0 +1,87 @@
+package com.company;
+//  polymorphism ka mtlb hey k 1 cheez bhut saray different kam kr skty hy
+//  jesa k smart phone ko camera,gps,video player wgera k tor pr use kya ja skta hy
+//==================================================================================================
+interface MyCamera2{
+    void takeSnap();
+    void recordVideo();
+
+    private void greet(){
+        System.out.println("good morning");
+    }
+
+    default void record4kVideo(){
+        greet();
+        System.out.println("recording in 4k");
+    }
+}
+//-------------------
+interface MyWifi2{
+    String[]getNetworks();
+    void connectToNetwork(String network);
+}
+//-------------------
+class MyCellPhone2{
+    void callNumber(int phoneNumber){
+        System.out.println("calling " + phoneNumber);
+    }
+    void pickCall(){
+        System.out.println("connecting...");
+    }
+}
+//===========================================================================
+class MySmartPhone2 extends MyCellPhone2 implements MyCamera2,MyWifi2{
+
+//"""""""""""""""
+    public void sampleMeth(){       // its own method
+        System.out.println("meth");
+    }
+//""""""""""""
+    public void takeSnap(){                // from interface MyCamera2
+        System.out.println("taking snap");
+    }
+//"""""""""""
+//    public void record4kVideo(){            // from interface MyCamera2
+//        System.out.println("taking snap and recording in 4k");
+//    }
+//""""""""""""
+    public void recordVideo() {               // from interface MyCamera2
+        System.out.println("recording video");
+    }
+//"""""""""""
+    public String[] getNetworks() {           // from interface MyWifi2
+        System.out.println("getting list of networks");
+
+        String[] networkList = {"harry","shubam","arbaz"};
+        return networkList;
+    }
+//""""""""""""
+    public void connectToNetwork(String network) {           // from interface MyWifi2
+        System.out.println("Connecting to " + network);
+    }
+
+//""""""""""""""
+}
+
+public class PolymorphismInInterfaces59 {
+    public static void main(String[] args) {
+        MyCamera2 cam2 = new MySmartPhone2();   // camera ko smartphone k tor istmal kya ja rha hey
+// tu ap ka idher gps wifi wgera sy koi mtlb nhi hey
+// idhr camera ka objct bnaya hy iss lye idhr wifi k funtion ya method nhi use kr skty
+//  jesa k hum camera me idher wifi ka getNetworks nhi la sktay
+//       cam2.getNetworks();     not allowed
+
+    cam2.record4kVideo();         //--->>> it is allowed q k ye camera ka function hey
+
+ //   cam2.sampleMeth();    it is also not allowed because sampleMeth to smartphone ka function hey
+        //   jb k hum camera use kr rhay haen
+
+
+        MySmartPhone2 s = new MySmartPhone2();  //---> idher hum saray functions ko use kr stkay haen
+        // chahay vo camera k hon ya gps ya wifi ya video player q k smartphone k andr ye sb hotay haen
+        s.sampleMeth();
+        s.record4kVideo();
+        s.getNetworks();
+        s.callNumber(104163789);
+    }
+}

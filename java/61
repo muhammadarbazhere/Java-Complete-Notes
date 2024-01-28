@@ -1,0 +1,78 @@
+package com.company;
+//==================================================================================================
+
+class Library {                                    //-----------------------------------------------------
+//     attributes
+    String[] book;
+    int noOfBooks = 0 ;      // abhe library me 0 books haen
+
+//    constructor                iss ko empty rkhna hy
+
+    public Library() {                   //string 100 mtlb zyada zyada 100 books aa skty haen library me
+        book = new String[100];
+    }
+
+// METHODS asked in exercise
+// method 1
+    void addBook(String book) {
+
+        this.book[noOfBooks] = book;
+        noOfBooks++;
+                               System.out.println(book + " has been added!");
+    }
+// method 2
+    void showAvailableBooks() {
+                               System.out.println("Now available books are: ");
+        for (String book : this.book) {
+
+            if (book == null) {
+                continue;
+            }
+
+            System.out.println("* " + book);     // books ko numbr denay k liye star use hova hy
+        }
+    }
+// method 3
+    void issueBook(String book) {
+
+        for (int i = 0; i < this.book.length; i++) {
+
+           if (this.book[i].equals(book)) {
+               System.out.println("the book has been issued!");
+               this.book[i] = null;
+               return;
+           }
+        }
+        System.out.println("this book does not exist");
+
+    }
+// method 4
+    void returnBook(String book){
+        addBook(book);
+    }
+
+}                                               //---------------------------------------------------------
+
+    public class Exercise4solution61 {
+        public static void main(String[] args) {
+          /*
+    implement a library>>>>using java Class Library
+    Methods:addBook,issueBook,returnBook,showAvailableBooks
+    properties:array to store the available books
+    array to store the issued books
+     */
+            Library l1 = new Library();
+
+            l1.addBook("holy quran");
+            l1.addBook("urdu hindi book");
+            l1.showAvailableBooks();
+
+            l1.issueBook("urdu hindi book");
+            l1.showAvailableBooks();
+
+            l1.returnBook("urdu hindi book");
+            l1.showAvailableBooks();
+
+//========================================================================================================
+    }
+}

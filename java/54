@@ -1,0 +1,26 @@
+package com.company;
+// multiplication inheritance is not supported in java therefore we use interface
+
+//   interface me implement key word use hota hy
+//   inheritance me Extends key word use hota hy
+public class interfaces54 {
+    public static void main(String[] args) {
+
+        /*
+        introduction of interfaces
+in english , interface means a point where two systems meet or interect
+example...   tv <--------button---------> human
+   idhr button aik interface hy
+
+    java definition of interface
+interface is a group of related methods with empty bodies
+example....aik phone ko   camera, music player, calling device, speaker, web browser  k tor pr use kr skatay
+ haen jo k phone k interfaces haen
+
+interfaces k object ni bna sktay
+object srf classes k bntay haen
+
+         */
+
+    }
+}

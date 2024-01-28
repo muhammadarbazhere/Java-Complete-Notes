@@ -1,0 +1,33 @@
+package com.company;
+
+public class AddingBinInEnvironmentVariable63 {
+    public static void main(String[] args) {
+        /*
+        java is a hybrid language  both compiled as well as interpreted
+
+        java file ko class file(byte code) me change krnay k liye javac ko use kiya jata hy
+        Example
+        my file name in java package is          harry.java(compiled)
+         now i will change it to                 harry.class(interpreted)
+         we can only change a java file to class file by
+         VISUAL STUDIO CODE
+
+         agr search bar in windows   me windows power shell ko search kray
+          or uss me javac likh kr enter press kray tu ye uss wqt tk error day ga jb tk hum
+          java intallation me say Bin folder ko  environment variable me add nhi kr detay
+
+          how to add bin in envirenment variable and how to find bin location???
+
+          >>search environment variable
+           >>  click on  environment variable
+          >> click on path
+          >> click on edit
+          >> click on new
+          >> now paste     C:\Program Files\Java\jdk-20\bin
+          >> click ok
+
+         */
+
+
+    }
+}

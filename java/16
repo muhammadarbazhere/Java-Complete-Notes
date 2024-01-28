@@ -1,0 +1,24 @@
+package com.company;
+              // two types of conditionals
+// 1;  if-else statement
+// 2;  Switch statement
+
+public class Conditionals16 {
+    public static void main(String[] args) {
+// iss video me if-else conditionals ko dekhay gay
+
+//---------------------------------------------------------------------------------------------
+              //  ==(equals),  >=(greater than equal to),  !=(NOT EQUALS),
+
+        int age = 6;
+                if(age!=18){
+                    System.out.println("yes boy you can drive!");
+                }                    // else optional hy
+                else {
+                    System.out.println("no boy you cannot drive yet");
+                }
+//----------------------------------------------------------------------------------------------------
+
+    }
+}
+

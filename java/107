@@ -1,0 +1,50 @@
+package com.company;
+//====================================================================================================
+// class k liye java.comment ko class k uper lgatay haen
+// lkin   agr method k liye java.comment lgana ho to us ko ussi method k uper likhay gay
+
+
+/**
+ * this is a javaDoc comment for class and it is also a discription
+ */
+
+public class methodTagsForJavaDocs107 {   //---------------------------------------------------------
+
+    /**
+     * @param args This is a javaDoc comment for main
+     */
+
+    public static void main(String[] args) {    //------------------------------------------------------
+
+        System.out.println("i am main method");
+    }
+             // main idhr close ho raha hy
+
+
+// pehlay nechay apna method add kray gay phir javadoc comment lgaey gay tu ye i j or return khud
+// say aa jaey ga hmay bs inkay k agay inky tfseel likhny hogy  lkin agr exception deny ho tu uss
+// ko bhee add kr sktay haen  or deprication bhee show krva sktay haen
+
+    /**
+     * for a method discription can be added at the start of javaDoc comment
+     *
+     * @param i this is first number to add
+     * @param j this is second number to add
+     * @return sum of two numbers as an integer
+     * @throws Exception if i is equal to 0
+     * @deprecated this method is deprecated please use + operator
+     */
+
+
+    public int add(int i, int j) throws Exception {
+        if (i == 0) {
+            throw new Exception();
+        }
+
+        int c = i + j;
+        return c;
+    }
+
+//== =====================================================================================================
+
+}

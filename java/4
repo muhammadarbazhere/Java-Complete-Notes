@@ -1,0 +1,67 @@
+package com.company;
+// a constant value which can be assigned to a variable
+
+
+
+public class Literals4 {
+    public static void main(String[] args) {
+
+        // non primitive data type
+
+        //1:  integral                    byte & short & int & long
+        //2:  floats(decimal)                                   floats & double
+        //3:  char   // exp  'A'
+        //4:  boolean    true/false
+
+
+        // hm konsa data type use kray iss ko mloom krnay k liye  example nechay hy
+
+        // frz kiya agr hm ko AGE ko declare krna hy tu hum iss ko byte me rkhay gay
+        // q k byte ki range -128 say 127 tk hoty hy
+        //age bhee 127 say km hee hoty hy hr kisy ki
+//------------------------------------------------------------------------------------------
+
+        byte age = 34;              //iss me 34 aik Literal hy
+        System.out.println(age);
+//----------------------------------------------------------------------------------------------
+
+        int age2 = 56;  // age ko int me bhee likh sktay haen  q age bhe int ki range me aty hy
+
+//----------------------------------------------------------------------------------------------
+
+        char ch = 'A';      //A is Literal
+
+//------------------------------------------------------------------------------------------------
+
+        short age3 = 87;
+
+//-----------------------------------------------------------------------------------------
+
+        long ageDino = 56666l;   // idher literal me l zror likhna hy
+
+//---------------------------------------------------------------------------------------------
+
+        float f1 = 5.6f;
+
+//---------------------------------------------------------------------------------------------------
+
+        double d1 = 4.66D;   // d lgao ya na lgao
+
+//---------------------------------------------------------------------------------------------------
+
+        boolean a = true;
+
+//--------------------------------------------------------------------------------------------------
+
+//         extraa literal
+//
+//         String Literal
+        String str = "Harry";
+        System.out.println(str);
+
+//-------------------------------------------------------------------------------------------
+
+
+    }
+}
+

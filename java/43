@@ -1,0 +1,19 @@
+package com.company;
+
+public class Exercise3video43guessTheNumberGame {
+    public static void main(String[] args) {
+
+        /*
+        create a class GAME, which allows a user to play "guess the number" game once.
+        >>>>>>> game should have the following methods
+        1; constructor to generate the random user
+        2; takeUserInput() to take a userInput of number
+        3; isCorrectNumber() to detect weather number entered by the user is true
+        4; getter and setter for noOfGuesses
+        >>>>>> Use properties such as noOfGuesses(), etc to get this task done!
+         */
+
+//answer video  =  Exercise3solution50
+
+    }
+}

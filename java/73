@@ -1,0 +1,45 @@
+package com.company;
+             // thread class
+//   1: thread()
+//   2:thread(string name)
+//   3: thread(runnable r,String name)
+//   4: thread(runnable r)
+
+//  thread 2 is being studied in this video
+//---------------------------------------------------------------------------------------------------
+class MyThr extends Thread {
+// constructor  //constructor  for thread(name) lena hy idhr by Alt insert qk nechay obj me name harry hy
+    public MyThr(String name) {
+        super(name);
+    }
+
+// thread's method
+    public void run() {
+
+        int i = 34;
+        System.out.println("thanks");
+       while (true){
+           System.out.println("i m a thread");
+       }
+    }
+}
+//-----------------------------------------------------------------------------------------------------
+public class ConstructorsFromThreadClasss73 {
+    public static void main(String[] args) {
+//-----------------------------------------------------------------------------------------------------
+
+        MyThr t1 = new MyThr("harry");
+        MyThr t2 = new MyThr("arbaz");
+
+        t1.start();
+        t2.start();
+
+//        System.out.println("the id of the thread t1 is " + t1.getId());
+//        System.out.println("the name of the thread t1 is " + t1.getName());
+
+//
+//        System.out.println("the id of the thread t2 is " + t2.getId());
+//        System.out.println("the name of the thread t2 is " + t2.getName());
+//====================================================================================================
+    }
+}

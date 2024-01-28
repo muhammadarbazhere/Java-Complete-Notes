@@ -1,0 +1,163 @@
+package com.company;
+
+public class PractiseSet29 {
+    public static void main(String[] args) {
+//------------------------------------------------------------------------------------------------
+//q1
+//create an array of 5 floats  and calculate their sum
+
+//        float [] marks = {45.7f, 67.8f, 63.4f, 99.2f, 100.0f};
+//                float sum =0;
+//        for (float element:marks){
+//            sum = sum + element;
+//        }
+//        System.out.println(sum);
+
+//------------------------------------------------------------------------------------------
+//q2
+//programme to find weather a given integer is given in array or not
+
+//            float [] marks = {45.7f, 67.8f, 63.4f, 99.2f, 100.0f};
+//            float num = 45.7f;
+//            boolean isInArray = false;
+
+//            for (float element:marks){
+//                if(num==element){
+//                    isInArray = true;
+//                    break;
+//                }
+//            }
+//            if (isInArray){
+//                System.out.println("the value is present in the array");
+//            }
+//            else{
+//                System.out.println("the value is not in the array");
+
+//------------------------------------------------------------------------------------------
+//q3
+//calculate average marks from an array containing marks of all students in physics using for-each loop
+
+//        float [] marks = {45.7f, 67.8f, 63.4f, 99.2f, 100.0f};
+//        float sum =0;
+//        for (float element:marks){
+//            sum = sum + element;
+//        }
+//        System.out.println("the value of average marks is " + sum/marks.length);
+
+//------------------------------------------------------------------------------------------
+//q4
+//java programme to add two matrix of size 2 X 3
+// 2 rows and 3 column
+
+//        int [][] matrix1 = {
+//                {1, 2, 3},
+//                {4, 5, 6}
+//        };
+//
+//        int [][] matrix2 = {
+//                {2, 6, 3},
+//                {3, 7, 444}
+//        };
+//
+//        int [][] result = {
+//                {0, 0, 0},
+//                {0, 0, 0}
+//        };
+//
+//        for (int i=0; i<matrix1.length; i++) {
+//
+//            for (int j = 0; j<matrix1[i].length; j++) {
+//                result[i][j] = matrix1[i][j] + matrix2[i][j];
+//            }
+//
+//        }
+//
+//
+//        for (int i=0; i<matrix2.length; i++) {
+//
+//            for (int j = 0; j<matrix2[i].length; j++) {
+//                System.out.print(result[i][j] + " " );
+//            }
+//
+//
+//            System.out.println("");
+//        }
+
+
+//------------------------------------------------------------------------------------------
+//q5
+//write a java programme to reverse an array
+
+
+// int a = Math.floorDiv(5,2);
+//  System.out.println(a);
+// answer is 2   q k 5/2 = 2 point some thing     agr 4/2 kray phir 2 answer  agr 3/2 kray phir 1 answer
+
+//
+//        int [] arr = {1, 2, 3, 4, 5, 6};
+//        int l = arr.length;
+//        int n = Math.floorDiv( l, 2);
+//
+//        int temp;
+//        // what is temporary               a        b       temporay box
+//                      //                  |4|      |3|         | |
+//
+//        for (int i=0; i<n; i++){
+//            temp = arr[i];
+//            arr[i] = arr[l-i-1];
+//            arr[l-i-1] = temp;
+//        }
+//
+//        for (int element: arr){
+//            System.out.println(element + " ");
+//        }
+
+//----------------------------------------------------------------------------------------------
+//q6
+//a java programme to find the maximum element in an array
+
+//        int [] arr = {1, 2, 3, 455, 67, 6};
+//        int max = 0;
+//
+//        for (int element: arr){
+//
+//            if (element>max){
+//                max = element;
+//            }
+//
+//        }
+//        System.out.println(max);
+
+
+//--------------------------------------------------------------------------------------------------
+//q7
+//a java programme to find the minimum element in an array
+
+//-------------------------------------------------------------------------------------------------
+//q8
+//a programme to find weather an array is sorted(ascending order) or not
+
+
+        int[] arr = {1, 2, 3, 455, 67, 6};
+                boolean isSorted = true;
+        for (int i = 0; i < arr.length-1; i++) {
+
+            if (arr[i] > arr[i + 1]) {
+                isSorted = false;
+                break;
+            }
+        }
+if (isSorted){
+    System.out.println("the array is sorted");
+}
+else {
+    System.out.println("array is not sorted");
+}
+
+//-------------------------------------------------------------------------------------------------
+    }
+}
+
+
+
+

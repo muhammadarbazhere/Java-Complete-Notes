@@ -1,0 +1,46 @@
+//package com.company;
+          // logical operators
+// && (and operator)
+// || (or operator)
+// ! (not operator)
+
+public class logicalOperators17 {
+    public static void main(String[] args) {
+
+//------------------------------------------------------------------------------------------
+
+//AND(&&) Operators evaluate to true if both the conditions true
+
+        boolean a = true;
+        boolean b = false;
+        if(a && b){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+        // answer = no
+
+//--------------------------------------------------------------------------------------------
+
+// 0R(||) Operators evaluate to true when at least one of the conditions is true)
+        if(a || b){
+            System.out.println("yes");
+        }
+        else{
+            System.out.println("no");
+        }
+        // answer = yes  k q dono me say koi aik true aya hey
+
+//--------------------------------------------------------------------------------------------------
+
+// NOT(!) Operators negate the given logic(true become false/false become true)
+
+        System.out.print(" Not a is " + !a ); // iss ka answer false hy qk a = true hy
+
+        System.out.println(" Not b is " + !b ); // iss ka answer true hy qk b = false hy
+
+//------------------------------------------------------------------------------------------------
+    }
+}
+

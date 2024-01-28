@@ -1,0 +1,77 @@
+//package com.company;
+                      // commonly used String Methods(part2)
+// .subString ( is me jo index day gay uss number say kr agay tk mukamal show hoga
+          //       frz kya string hy harry or hum nay subString me 1 likha hy
+          //   idher 1 number pr  a  hy  tu iss say agay saray characters show hon gay)
+
+// .replace (iss me 2 character dye jatay haen  old char ko new char say replace kr day
+           //frz kiya hum nay dyaa  .replace(r,p)   tu ye uss word harry me r ko p saay replace kry ga)
+
+// .startWith ( iss me jo drj kray gay   agr string ussi say start ho rha tu true   otherwise false day ga)
+
+// .endsWith (iss me jo drj kray gay   agr string ussi say end ho rha tu true   otherwise false day ga )
+
+// .charAt ( iss me jo index dya jaey  uss number pr jo hroof aa rha ho ga wohi answer ho ga)
+
+// .indexOf ( iss me jo hroof dalay gy  ye us ka number btaey ga
+                                     // frz kiya agr r  add kray iss me tu harry me iss ka answer 2 hoga )
+
+// .equals ( iss me jo likhay gay   agr vo String k equal ho ga tu true  wrna false)
+
+//
+
+
+public class StringMethods14part2 {
+    public static void main(String[] args) {
+//--------------------------------------------------------------------------------------------------------
+
+        String s = "Harry";        // num 0=h,1=a,2=r,3=r,4=y
+
+        //method1        agr index 1 dyaa tu ye   a  say agay saray include kray ga method
+        System.out.println(s.substring(1));
+                                // answer is =  arry
+        //method2       agr index  1 or 4  dyaa tu ye 1 say 3 tk include kray ga  4 ko exclude kray ga
+        System.out.println(s.substring(2,4));
+                       //answer is = rr    2 say pichay show nhi kray ga  or 4 say aglay show nhi kray ga
+
+//---------------------------------------------------------------------------------------------------------
+                 // method1
+        System.out.println(s.replace('r','p'));
+                //method2
+      //  System.out.println(s.replace('rry','ier'));
+//-----------------------------------------------------------------------------------------------------
+
+        System.out.println(s.startsWith("Har"));
+// string ka name Har say start ho rha hey issy liye is ka answer true hoga
+
+//----------------------------------------------------------------------------------------------------
+
+        System.out.println(s.endsWith("Har"));
+        // ye Har pr end nhi ho raha issy liye is ka answer false hoga
+
+//------------------------------------------------------------------------------------------------
+
+        System.out.println(s.charAt(1));     // iss me 1 nmbr pr a haey jo k iss ka answer hy
+
+//----------------------------------------------------------------------------------------------------
+
+        System.out.println(s.indexOf("r"));
+                          // harry me pehlay r ka numbr 2 hy  jo k iss ka answer hy
+        System.out.println(s.lastIndexOf("rry"));
+                        // harry me  rry  number 2 say start ho rha  jo k iss ka answer hy
+
+//---------------------------------------------------------------------------------------------------
+
+        // diye gaey word ko string kay name say match krnay k liye dot equals(.equals) use kray
+        System.out.println(s.equals("Harry"));  // idhr agr H chota likha tu false aey ga
+
+        // agr bray chotay words ki equalanse ko khtm krna ho to
+        // upper aur lower case ko ignore krna ho to
+        // .equalsIgnoreCase use krtay haen ...jesa k nechay dya gya hey
+        System.out.println(s.equalsIgnoreCase("hArrY"));
+
+//------------------------------------------------------------------------------------------------------
+
+    }
+}
+

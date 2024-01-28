@@ -1,0 +1,113 @@
+package com.company;
+//--------------------------------------------------------------------------------------
+// Exception class 1
+class  MaxMultiplyInputException extends Exception{
+
+    // alt insert pr click kiya  aor phir ToString pr click kiya
+    public String toString(){
+        return"input can't be greater than 7,000 while multiplying";
+    }
+}
+//------------------------------------------------------------------------------------------
+// Exception class 2
+class  MaxInputException extends Exception{
+
+    // alt insert pr click kiya  aor phir ToString pr click kiya
+    public String toString(){
+        return"input can't be greater than 100,000";
+    }
+}
+//----------------------------------------------------------------------------------------------
+// Exception class 3
+class  CannotDivideByZeroException extends Exception {
+
+    // alt insert pr click kiya  aor phir ToString pr click kiya
+    public String toString() {
+        return "cannot divide by 0";
+    }
+}
+//------------------------------------------------------------------------------------------------
+// Exception class 4
+class InvalidInputException extends Exception{
+
+    // alt insert pr click kiya  aor phir ToString pr click kiya
+    public String toString(){
+        return"can not add 8 and 9";
+    }
+}
+//-----------------------------------------------------------------------------------------------
+//              Create a class custom calculator
+class CustomCalculator{
+// method 1(addition).............................
+    double add(double a,double b) throws InvalidInputException,MaxInputException{
+
+        if (a>100000 || b>100000){
+            throw new MaxInputException();
+        }
+        if(a==8 || b==9) {
+            throw new InvalidInputException();
+        }
+
+        return a+b;
+    }
+// method 2(subtraction)........................
+    double subtract(double a,double b)throws MaxInputException{
+
+        if (a>100000 || b>100000){
+            throw new MaxInputException();
+        }
+        return a-b;
+    }
+// method 3(multiplication).........................
+    double multiply(double a,double b)throws MaxInputException, MaxMultiplyInputException{
+
+        if (a>100000 || b>100000){
+            throw new MaxInputException();
+        }
+        if (a>7000 || b>7000){      // ye Exception srf Multiply walay method me hee aey gi
+            throw new MaxMultiplyInputException();
+        }
+
+        return a*b;
+    }
+// method 4(division).........................
+    double divide(double a,double b)throws CannotDivideByZeroException,MaxInputException{
+
+        if (a>100000 || b>100000){
+            throw new MaxInputException();
+        }
+        if (b==0){
+            throw new  CannotDivideByZeroException();
+        }
+
+        return a/b;
+    }
+}
+//===============================================================================================
+public class Exercise6solution103 {
+public static void main(String[] args) throws InvalidInputException,CannotDivideByZeroException,
+        MaxInputException, MaxMultiplyInputException {
+//==================================================================================================
+/*      Exercise 6
+        you have to create a custom calculator with following operations
+        1;    +(addition)                   2;    -(subtraction)
+        3;    *(multiplication)             4;    /(division)
+        which throws the following exceptions
+        1.  invalid input Exception   misal k tor pr 8 & 9
+        2.  cannot divide by 0 Exception
+        3.  Max input Exception  if any of the inputs is greater than 100,000
+        4.  Max multiplier reached Exception-
+         -don't allow any multiplication input to be greater than 7,000 */
+
+CustomCalculator c = new CustomCalculator();
+
+//    c.add(8,9);
+//    c.divide(6,0);
+//    c.subtract(1500000,8);
+
+//    c.divide(600000,40);
+//    c.multiply(5,9000);
+
+//---------------------------------------------------------------------------------------------------
+    }
+}

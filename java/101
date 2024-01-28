@@ -1,0 +1,32 @@
+package com.company;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+public class DateTimeFormatter101 {
+    public static void main(String[] args) {
+//===============================================================================================
+        LocalDateTime dt = LocalDateTime.now();                          // this is dateTime
+        System.out.println(dt);
+
+               // following me MM  braa likhna hy
+//dd-MM-yy = date  frz kya  15-08-2023
+// agr sath me  E  likh day tu  ye date k agay din ka naam bhee likh day ga
+
+//capital  H   YE HOURS BTAEY GA
+//small  m  ye minutes btaey ga
+//small   s   ye seconds btaey ga
+//small    a  likh day tu ye am pm bta day ga
+
+// ye sara koch jdk 20 goggle pr java docs pr dya gya hy
+
+DateTimeFormatter dtf1 = DateTimeFormatter.ofPattern("dd/MM/yy--E H:m:a");  // this is format
+// creating date String using    date & format
+        String myDate = dt.format(dtf1);                // this is DateTimeFormatter
+        System.out.println(myDate);
+
+DateTimeFormatter dtf2 = DateTimeFormatter.ISO_LOCAL_DATE;   // format
+DateTimeFormatter dtf3 = DateTimeFormatter.ISO_WEEK_DATE;   // format
+
+        //   aesay hee  ISO lgatay jaey tu bhut saray formats aatay jaey gay
+//===============================================================================================
+    }
+}

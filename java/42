@@ -1,0 +1,68 @@
+package com.company;
+
+// jidhr sval me Constructor dya gya ho  udher getter lena zrory hota hy   setter lena zrory nhi hota
+// lkin jidhr constructor k baghaer svaal solve krna ho to udher getter or setter dono letay haen
+
+//----------------------------------------------------------------------------------------------------
+class MyMainEmployee{
+                  // attributes
+    private int id;
+    private String name;
+
+               // constructor                         iss ko alt insert dbba kr bhee likh sktay haen
+// constructor can be overloaded
+// we can create more than one constructor
+//
+
+// 1;
+    public MyMainEmployee(int id, String name) {
+        this.id = id;
+        this.name = "name";
+    }
+// 2;
+    public MyMainEmployee(String myName){
+       id = id;
+        name = "myName";
+    }
+// 3;
+       public MyMainEmployee(){
+        id = id;
+        name = "ARBAZ";
+    }
+
+// getter and setter ko bhee Alt Insert say add kr sktay haen
+                 //                setter
+    public String getName() {
+        return name;
+    }
+    public int getId() {
+        return id;
+    }
+           //                getter
+    public void setName(String Myname) {
+        name = Myname;
+    }
+
+    public void setId(int Myid) {
+        id = Myid;
+    }
+
+}
+
+public class constructors42 {                                  //------------------------------------------
+    public static void main(String[] args) {                   //-----------------------------------------
+
+   MyMainEmployee harry = new MyMainEmployee(111 ,"arbaz"); // it runs constructor 1
+// MyMainEmployee harry = new MyMainEmployee("sami");    // it runs constructors 2
+// MyMainEmployee harry = new MyMainEmployee();     // iss ko run krnay say constructor 3 run hoga
+
+
+        System.out.println(harry.getId());
+        System.out.println(harry.getName());
+
+//---------------------------------------------------------------------------------------------------
+    }
+}
+
+
+

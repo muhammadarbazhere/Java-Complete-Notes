@@ -1,0 +1,27 @@
+package com.company;
+
+public class TryCatchBLOCK80 {
+    public static void main(String[] args) {
+//=================================================================================================
+
+//        int a = 6000;
+//        int b = 9;
+
+//        int c = a/b;
+//        System.out.println("the result is " + c);
+
+//lkin agr hum idher b ki value 0  kr day tu ye ek exception throw kr day ga   our error show kray ga
+//is ko solve krnay k liye hum Try Catch lgaey gay
+
+        int a = 6000;
+        int b = 0;
+try {
+    int c = a / b;
+    System.out.println(c);
+}
+catch (Exception e){      //exception uss error ko pkr kr usay print kr dy ga
+    System.out.println(e);
+}
+//================================================================================================================
+    }
+}

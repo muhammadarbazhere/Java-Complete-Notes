@@ -1,0 +1,124 @@
+package com.company;
+// agr class abstract ho  tu jidhr isko extend krna ho tu udhr iss abstract class
+// k saray methods ko dobara likhna hota hy lkin agr class abstract na ho
+// phr inko dobara likhnay ki zrorat nhi hoty q k ye publically extend ho jatay haen
+
+//-------------------------------------------------------------------------------------------------
+// class for q1
+abstract class Pen{
+   abstract void write();
+   abstract void refill();
+}
+// class for q2
+class FountainPen extends Pen{
+     void write(){
+        System.out.println(" writing");
+    };
+     void refill(){
+        System.out.println("refilling");
+    };
+    void changeNib(){
+        System.out.println("changing the nib");
+    }
+}
+//=======================================================================================================
+// classes for q3
+
+class Monkey{                  //iss ko abstract nhi bnaey gay q k question me nhi kaha gya
+    void jump(){
+        System.out.println("jumping...");
+    }
+    void bite(){
+        System.out.println("biting....");
+    }
+}
+//---------------
+
+// question me ek BasicAnimal Interface bhee bnanay ka kaha gya hy js me eat or sleep mthods hon
+interface BasicAnimal{
+    void eat();
+    void sleep();
+}
+//--------------
+
+// ek class human bnao jo monkey ko inherit kray or basicAnimal ko implement kray
+// jis interface ko implement kya jata hey to us k METHODS(eat\sleep) ko bhe define kya jata hey
+
+class Human extends Monkey implements BasicAnimal{
+
+    void speak(){          // its own method
+        System.out.println(" hello sir i m a human");
+    };
+
+    @Override
+        public void eat() {           // from interface BasicAnimal
+            System.out.println("eating...");
+        }
+
+        @Override
+        public void sleep() {         // from interface BasicAnimal
+            System.out.println("sleeping");
+        }
+    }
+//======================================================================================================
+
+public class PractiseSet60 {                                        //----------------------------------
+    public static void main(String[] args) {                        //----------------------------------
+
+// q1
+// create an abstract class pen with methods write() and refill() as abstract methods
+
+           // iss ka answer uper hy    srf methods bnanay haen
+
+//====================================================================================================
+// q2
+// use Pen class from q1 to create a concrete class FountainPen with additional method changeNib()
+
+                 // q1 + q2
+        FountainPen p1 = new FountainPen();
+        p1.changeNib();
+
+//======================================================================================================
+// q3
+// create a class monkey with jump() and bite() methods.create a class human which inherits monkey
+// class and implements BasicAnimal interface with eat() and sleep() methods
+
+        Human h1 = new Human();
+        h1.sleep();
+        h1.bite();
+//===================================================================================================
+// q4
+// create a class telephone with ring(), lift() and disconnected() methods as
+// abstract methods create an other class smart phone and demonstrate polymorphism
+// methods abstract haen t telephone class bhe abstract hogy
+
+//====================================================================================================
+// q5
+// demostrate polymorphism using monkey class from q3
+
+// polymophism ---> is me jis ka object bna hova ho ga ussy k functions ko recall kya jaey ga
+        Monkey m = new Human();
+//      m1.speak();        not allowed        q k speak human ka function dya hova hey
+                 // lkin hum ny obj monkey ko liya hey to functions bhee monkey k lay gay
+//    monkey me  2 methods eat or bite haen  tu unko idher use kr skty haen
+
+        m.jump();
+        m.bite();
+
+  //      BasicAnimal b = new Human();   idhr basicanimal k methods ko  is trah cal krtay haen
+
+//====================================================================================================
+// q6
+// create an interface TvRemote and use it to inherit another interface SmartTvRemote
+
+        // answer =   add interface 1   then  add interface 2 and extend it with interface 1
+        // then add a class which implement only interface 2 which also
+        // have the all methods of interface 1
+
+//==============================================================================================
+//q7
+// create a class TV which implements TvRemote which is an interface from q6
+
+//=================================================================================================
+    }
+}

@@ -1,0 +1,56 @@
+//package com.company;
+
+public class PractiseSet15 {
+    public static void main(String[] args) {
+//---------------------------------------------------------------------------------------------------
+// q1
+// write a java programme to convert a String to lowerCase
+String s = "Arbaz";
+String lowerString = s.toLowerCase();
+        System.out.println(lowerString);
+//---------------------------------------------------------------------------------------------------
+
+//q2
+//write a programme to replace spaces with UnderScores
+        String str = "My Name Is Arbaz";
+        System.out.println(str.replace(" ","_"));
+
+//---------------------------------------------------------------------------------------------------
+
+//q3
+// java programme to fill in a letter template which looks like
+//        letter = "dear < | name | >,thanks a lot"
+//        replace < | name | > with a string (some name)"
+
+String letter = "dear < | name | >,thanks a lot";
+        System.out.println(letter.replace("< | name | >","arbaz"));
+
+//-------------------------------------------------------------------------------------------------
+
+//q4
+//a java programme to detect double and triple spaces in a string
+        String str1 = "My  nameIs     arbaz";
+
+    //double space mloom krnay ka treqa
+        System.out.println(str1.indexOf("  "));
+        //double index walay ka jwab 2 hy q k ye dosray hindsay say double space shuru hoty hy 0(m),1(y), 2(  )
+
+        // triple space mloom krnay ka treqa
+        System.out.println(str1.indexOf("   "));  // triple spaces mloom krnay k liye
+        //triple index walay ka jwab 10 hy idhr qk ye dsvay hindsay say triple space shuru hoty hy
+
+//-------------------------------------------------------------------------------------------------------
+//q5
+// video    EscapeSequence114  me iss ki wzahat hy
+//write a programme to format the following letter sequence characters
+
+        String Letter1 = "dear harry, \n\t this course is nice.\n\t thanks! ";
+        System.out.println(Letter1);
+
+//--------------------------------------------------------------------------------------------------
+
+
+
+    }
+}
+

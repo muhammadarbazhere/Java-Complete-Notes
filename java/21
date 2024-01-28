@@ -1,0 +1,23 @@
+package com.company;
+
+public class whileLoop21 {
+    public static void main(String[] args) {
+
+//--------------------------------------------------------------------------------------------
+// three types of loop in java
+        // while loop
+        // do while loop
+        // for loop
+
+        System.out.println("using loops");
+
+        int i = 1;
+        while (i<=3){
+            System.out.println(i);
+            i++;
+        }
+
+//---------------------------------------------------------------------------------------------------
+
+    }
+}

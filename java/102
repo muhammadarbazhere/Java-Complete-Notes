@@ -1,0 +1,77 @@
+package com.company;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
+
+public class PractiseSet102 {
+    public static void main(String[] args) {
+//====================================================================================================
+// q1
+// create an array list which store names of 10 students, print it using for each loop
+
+        ArrayList ar = new ArrayList();
+        ar.add("student 1");
+        ar.add("student 2");
+        ar.add("student 3");
+        ar.add("student 4");
+        ar.add("student 5");
+        ar.add("student 6");
+        ar.add("student 7");
+        ar.add("student 8");
+        ar.add("student 9");
+        ar.add("student 10");
+
+        for (Object o: ar){
+            System.out.println(o);
+        }
+//------------------------------------------------------------------------------------------------------
+// q2
+// use date class which is depricated in java to print time in the following format   21:47:02
+
+        Date d = new Date();
+//  System.out.println(d);          // agr d ko print kray tu ye date time day am pm sb print kr day ga
+                               // lkin hum ko srf uper walay format k mutabik wqt mlom krna hy
+
+        System.out.println( d.getHours() + d.getMinutes() + d.getSeconds());
+//---------------------------------------------------------------------------------------------------
+// q3
+// repeat q2 using calender class
+
+    Calendar c = Calendar.getInstance();
+System.out.println(c.get(Calendar.HOUR_OF_DAY) + ":" + c.get(Calendar.MINUTE) + ":" + c.get(Calendar.SECOND));
+//-----------------------------------------------------------------------------------------------------
+// q4
+// repeat q2 using java.time Api
+
+//agr nechay wla methd kray tu mili secnds bhe show krta hy lkin  hum ko folowing format me srf
+// secnds tk he wqt mloom krna hy
+
+//        LocalTime t = LocalTime.now();
+//        System.out.println(t);
+
+        // iss liye hum ko date time formatter ka mthod use krna hoga
+        LocalDateTime dt = LocalDateTime.now();                              // it is DateTime
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("H:m:s");   // it is Format
+// creating date String using date and format
+        String myDate = dt.format(dtf);        // DateTimeFormatter
+        System.out.println(myDate);
+//------------------------------------------------------------------------------------------------------
+// q5
+// create a set in java    try to store dublicate elements  inside this set and verify that
+// only one instance is stored
+
+        HashSet<Integer> hs = new HashSet<>();
+        hs.add(5);
+        hs.add(6);
+        hs.add(46);
+        hs.add(60);
+        hs.add(9);
+        hs.add(6);
+        System.out.println(hs);
+
+
+//-----------------------------------------------------------------------------------------------------
+
+    }
+}

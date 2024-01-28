@@ -1,0 +1,18 @@
+package com.company;
+
+public class VsCode115 {
+    public static void main(String[] args) {
+        /*
+vs code me
+file ko class bnanay k liye terminal me ja kr new terminal me ja kr    javac filename.java
+
+agr file me package mojod ho or uss ko run krna ho to  java pakageName/filename yaa
+agr file me pkg na ho or uss ko run krna ho to  java filename
+
+classes ko aik PACKAGE me dalnay k liye       javac space -d.space filename.java
+ya phir             javac space -d.space *.java
+
+
+         */
+    }
+}

@@ -1,0 +1,52 @@
+package com.company;
+////       PART 1 me try or catch me join ka btaya gya hey              PART 2 NECHAY DYA GYA HEY
+//=======================================================================================================
+// thread1
+class MyNewThr1 extends Thread {
+    public void run() {
+
+        int i = 0;
+        while (i<20) {
+            System.out.println("i m a thread");
+        i++;
+
+        }
+    }
+}
+//-----------------
+// thread2
+class MyNewThr2 extends Thread {
+    public void run() {
+
+        int i=0;
+        while (i<20) {
+            System.out.println("thank you so much");
+        i++;
+
+        }
+    }
+}
+//----------------------------------------------------------------------------------------------------
+public class ThreadMethods75part1 {
+    public static void main(String[] args) {
+//------------------------------------------------------------------------------------------------------
+
+        MyNewThr1 t1 = new MyNewThr1();
+        MyNewThr2 t2 = new MyNewThr2();
+        t1.start();
+//   t2 us wqt tk start na ho ga jb tk T1 khtm na ho jaey
+// iss k liye TRY CATCH lgaey gay
+
+        try {
+            t1.join();
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+
+
+        t2.start();
+//=====================================================================================================
+    }
+}
+//                PART 2        jis me try or catch me sleep ka btaya gya hey

@@ -1,0 +1,82 @@
+package com.company;
+//--------------------------------------------------------------------------------------------------
+// classes for q1
+class Circle{
+    public int radius;
+
+    public double area(){
+        return Math.PI*this.radius*this.radius;
+    }
+
+                 //constructor
+    Circle(int radius) {
+        this.radius = radius;
+        System.out.println("i m constructer of class circle");
+    }
+                // over loaded constructor
+    Circle() {
+
+        System.out.println("i m over loaded constructor of class circle");
+    }
+//---
+}
+//----------------
+
+class Cylinder1 extends Circle{
+    public int height;
+
+    public double volume() {
+        return Math.PI*this.radius*this.radius*this.height;
+    }
+
+                   // constructor
+    public Cylinder1(int radius, int height) {
+        super(radius);
+        this.height = height;
+
+        System.out.println(" i m constructor of class Cylinder1 ");
+    }
+                   // over loaded constructor
+    public Cylinder1(int height) {
+        this.height = height;
+
+        System.out.println(" i m over loaded constructor of class Cylinder1");
+    }
+
+}
+//--------------------------------------------------------------------------------------------------
+
+public class PractiseSet52 {
+    public static void main(String[] args) {
+
+        //===================================================================================================
+// q1
+// create a class Circle and use inheritance to create another class Cylinder from it
+
+          Circle objc1 = new Circle();
+        Circle objc2 = new Circle(12);
+        Cylinder1 obj = new Cylinder1(12,4);
+//======================================================================================================
+// q2
+// create a class rectangle and use inheritance to create another class cuboid. try to keep it
+// as close to the real world scenario as possible
+
+//===================================================================================================
+// q3
+// create method for area and volume in q1
+
+//==================================================================================================
+// q4
+// create method for area and volume in q2.also create getters and setters
+
+//=================================================================================================
+// q5
+// what is the order of constructor execution for following inheritance hierarcy;
+//        base   >   derived1    >   derived2
+//  derived2 obj = new derived();
+// which constructor will be executed and in what order
+
+         // answer =  base > derived1 > derived2
+//========================================================================================================
+    }
+}

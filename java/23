@@ -1,0 +1,39 @@
+package com.company;
+
+public class forLoop23 {
+    public static void main(String[] args) {
+//-------------------------------------------------------------------------------------------
+// for loop
+
+                                    // incrementing for loop
+        for (int i=0; i<=4; i++){
+            System.out.println(i);
+// ye 0 say 4 tk chlay ga
+        }
+                                  // decrementing for loop
+        for (int i=5; i>=1; i--){
+            System.out.println(i);
+// ye 5 say 1 tk chlay ga
+        }
+
+
+//------------------------------------------------------------------------------------------------------
+// quick ques
+// print first n odd numbers using a for loop
+
+                 // n  =   natural numbers( jo zero sy start hotay haen)   = 0, 1, 2, 3, 4........
+                // Even numbers         2n = 0, 2, 4, 6, 8
+              // Odd numbers           2n+1 = 1, 3, 5, 7, 9
+
+        int o = 5;
+        for (int n=0 ; n<5; n++){
+            System.out.println(2*n + 1);
+        }
+
+//-----------------------------------------------------------------------------------------
+        // for each loop    in video 27
+
+//------------------------------------------------------------------------------------------------------
+    }
+}
+

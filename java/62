@@ -1,0 +1,23 @@
+package com.company;
+// java compiler or interpreted dono hy  java aik hubrid language hy    next video63 me hay
+public class InterpretedVsCompiledLanguage62 {
+    public static void main(String[] args) {
+        /*
+        interpreter(line by line translation)
+                   it translate one statement at a time into machine code
+
+         compiler(aik baar me pory baat ko translate kr k btana)
+                  it scans the entire programme and translate whole of it into machine code
+
+        example;;;
+        frz kiya mujhay english nhi aty   or aap english me mujh sy baat kro
+           tu me aik bndaa saath khra krta hon jo k tumhary english ko mujhay urdu me btata hy
+        agr vo line by line translate krta hy tu vo aik   interpreter   ka kaam krta hy
+        lkin agr vo pory baat ko sun kr mujhay aik hee dfaa sary baat
+        smjha day tu mtlb vo compiler ka kaam krta hy
+
+         */
+
+
+    }
+}

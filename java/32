@@ -1,0 +1,39 @@
+package com.company;
+public class MethodOverLoading32 {
+//-----------------------------------------------------------------------------------------------------
+
+    static void change(int [] array){
+    array[0] = 98;
+}
+
+//============================================================================================
+ // method over loading
+    static void foo() {
+        System.out.println("good morning bro!");
+    }
+
+    static void foo(int a) {
+        System.out.println("good morning " + a + " bro!");
+    }
+    static void foo(int a, int b) {
+        System.out.println("good morning " + a + " bro!");
+        System.out.println("good morning " + b + " bro!");
+    }
+//================================================================================================
+
+    public static void main(String[] args) {           //---------------------------------------------------
+
+    int [] marks = {1,2,3,4,5};
+    change(marks);
+        System.out.println(marks[0]);
+
+
+//============================================================================================
+        // method over loading
+        foo();
+        foo(3000);
+        foo(3000,4000);
+//===========================================================================================
+
+    }
+}

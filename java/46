@@ -1,0 +1,68 @@
+package com.company;
+//===================================================================================================
+class Base1{
+    public int x;
+                 // constructor
+    public Base1(int x) {
+        this.x = x;
+
+        System.out.println(" i m a constructor of class Base1 : " + x);
+    }
+               // over loaded constructor
+        public Base1() {
+                          // idhr koi int wgera nhi hy
+            System.out.println("i am an over loeded constructor of class Base1");
+    }
+
+// dosra constructor chlanay k liye derived constructor sy phly super keyword use krau gay
+
+//------------------
+}
+
+class Derived1 extends Base1{
+    public int y;
+                     // constructor
+                     public Derived1(int x, int y) {
+                         super(x);     // super(x) ka mtlb hy k iss me base(x) ka cnstructr bhe run hoga
+                         this.y = y;
+
+                         System.out.println("i m constructor of class derived1 : " + y);
+                     }
+
+                   // over loaded constructor
+                   public Derived1() {
+
+                         System.out.println(" i  over loaded am constructor of class derived1");
+                }
+//--------------------
+}
+
+class ChildOfDerived extends Derived1{
+    int z;
+                      // constructor
+    public ChildOfDerived(int x, int y, int z) {
+        super(x, y); //super(x,y) ka mtlb hy k iss me pehly base(x) or derived(y) dono ka cnstructr run hota
+        this.z = z;
+
+        System.out.println("i m constructor of childOfDerived class : " + z);
+    }
+                    // over loaded constructor
+    public ChildOfDerived() {
+
+        System.out.println("i am over loaded constructor of childOfDerived class");
+    }
+//----------------
+}
+
+public class ConstructorsInInheritance46 {                //--------------------------------------------
+    public static void main(String[] args) {              //--------------------------------------------
+
+       // Base1 b = new Base1();
+      //  Derived1 d = new Derived1(5,6);   // pehlay base ka constructor run hota phir derived ka
+      ChildOfDerived cd = new ChildOfDerived(13,14,15);
+                                 // childOfDerived me phly base ka phir derived ka
+                                // constructor phir childOfDerived ka constructor run hoga
+
+//======================================================================================================
+    }
+}

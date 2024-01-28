@@ -1,0 +1,55 @@
+package com.company;
+//--------------------------------------------------------------------------------------------------
+class Base{
+                 // class base k uper likha hy inheritor    jis ka mtlb hy k ye class kisy dosry class ko
+                               // inherit kr rhi hy mtlb k iss purani class say koi new class bnn rhi hy
+   public int x;
+    // getter
+    public int getX() {
+        return x;
+    }
+    // setter
+    public void setX(int x) {
+        this.x = x;
+    }
+//-------------
+}
+
+class Derived extends Base{
+
+ public int y;
+              // getter
+    public int getY() {
+        return y;
+    }
+             // setter
+    public void setY(int y) {
+        this.y = y;
+    }
+//--------------
+}
+
+public class inheritance45 {                              //-------------------------------------------
+    public static void main(String[] args) {              //----------------------------------------
+
+//   creating an object of Base class
+        Base b = new Base();
+        b.setX(4);
+        System.out.println(b.getX());    // base me derived k methods nhi use hotay
+
+//Derived class me Base k all functions shamil hoty hen is liye agr
+// hum idhr Derived Class bhi lga skty hen
+
+// object bnaya derived ka aur setX or mthods Base class k use kya
+
+//   creating an object of Derived class
+        Derived d = new Derived();
+
+        d.setX(43);                    // set X is basically a method of base class
+        System.out.println(d.getX());
+
+        d.setY(55);                   // set Y is derived class's method
+        System.out.println(d.getY());
+//===================================================================================================
+    }
+}

@@ -1,0 +1,54 @@
+package com.company;
+//-------------------------------------------------------------------------------------------------
+// aik java file me srf 1 public class hoty hy
+// jis method me void ho voh koch bhe return nhi krta
+
+class Employee{
+
+    int id;
+    String name;
+    int sallery;
+
+    public void printdetails(){
+        System.out.println("my id is " + id);
+        System.out.println("and my name is " + name);
+    }
+    public int getSallery() {
+        return sallery;
+    }
+
+}
+
+public class customClass38 {                         //----------------------------------------------------
+    public static void main(String[] args) {         //-----------------------------------------------------
+
+        System.out.println("this is our custom class");
+        Employee harry = new Employee();
+        // aik aor add kray gay
+        Employee john = new Employee();
+
+
+            // setting attributes for harry
+        harry.id = 12;
+        harry.sallery = 34;
+        harry.name = "code with harry";
+
+        // setting attributes for john
+        john.id = 17;
+        john.sallery = 12;
+        john.name = "john tripathy";
+
+
+            // printing the attributes
+        harry.printdetails();
+        john.printdetails();
+//        int sallery = john.getSallery();
+//        System.out.println(sallery);
+
+//        System.out.println(harry.id);
+//        System.out.println(harry.name);
+        System.out.println(harry.sallery);
+
+//-------------------------------------------------------------------------------------------------------
+    }
+}

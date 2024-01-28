@@ -1,0 +1,18 @@
+package com.company;
+
+public class CollectionsFramework88 {
+    public static void main(String[] args) {
+
+        /*
+ a collection which represent a group of onject.
+ java collection provide classes and interfaces for us to be able to write code quickly
+
+ commonly used collections in java
+ 1; Arraylist
+ 2; Set
+ 3; Stack
+ 4; HashMap(stores key value structure)
+
+         */
+    }
+}

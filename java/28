@@ -1,0 +1,40 @@
+package com.company;
+
+public class multiDimentionalArrays28 {
+    public static void main(String[] args) {
+//-------------------------------------------------------------------------------------------------------
+
+        // int [] marks ;    // 1 dimentional array  (1D array)
+
+         int [][] flats;   // 2 dimentional array (2D array)
+
+        flats = new int [2][3];  // 2 floor haen aur hr floor pr 3 flats haen
+
+                // ground floor(0) walay flats
+        flats[0][0] = 151 ;
+        flats[0][1] = 152 ;
+        flats[0][2] = 153 ;
+              // top floor(1) walay flats
+        flats[1][0] = 201 ;
+        flats[1][1] = 202 ;
+        flats[1][2] = 203 ;
+
+// ground floor k liye i
+// top floor k liye j
+        System.out.println("printing a 2D array using for LOOP");
+
+        for (int i=0; i<flats.length; i++) {
+
+
+            for (int j = 0; j < flats[i].length; j++) {     // nested for loop
+                System.out.print(flats[i][j]);
+                System.out.println("");
+            }
+
+
+            System.out.println("\n");
+        }
+
+//------------------------------------------------------------------------------------------------------
+    }
+}

@@ -1,0 +1,24 @@
+package com.company;
+
+public class MultiThreading69 {
+    public static void main(String[] args) {
+        /*
+        multithreading used to achieve multitasking
+
+aik hee server me   chrome , vs code, intelliJ idea, notepad  wgera wgera chla
+ dena  multitasking kehlata hyor server ye saray kaam theek treqay say  aik hee
+  wqt pr krta bhee hey
+
+
+ CREATING A THREAD
+ 1;  By executing thread class
+ 2;  B implementing Runable interface
+ next video 70 me tfseel hy
+
+         */
+
+
+
+
+    }
+}

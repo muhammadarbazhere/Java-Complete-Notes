@@ -1,0 +1,28 @@
+package com.company;
+
+public class javaAnnotations108 {
+    public static void main(String[] args) {
+/*------------------------------------------------------------------------------------------------
+commonly used annotations
+
+@ovverride;
+          ovverride ka mtlb hey k ye methods kisy pichlay method ki copy hy
+
+@deprecated;
+           ye uss method pr lgaey jaty haey jo methods abb java me deprecated haen  not recomended
+
+@SuppressWarnings
+                 agr hum koi deprecated method use kray or ushr java warning day k ye
+                 method ab deprecate ho chuka hy tu iss warning say bchnay k liye hum
+                 MAIN k andr @SuppressWarnings likh detay haen
+
+@FunctionalInterface
+                    functional interface me srf aik hee ABSTRACT METHODS hota hy
+                    ab agr hum kisy interface k uper @FunctionalInterface lga day
+                    tu uss me srf aik hee ABSTRACT METHOD shamil kr skay gay  agr
+                     hum nay koi dosra method shamil kiya tu ye error day ga
+-----------------------------------------------------------------------------------------------------*/
+
+
+    }
+}

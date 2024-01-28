@@ -1,0 +1,93 @@
+package com.company;
+
+import java.util.ArrayList;
+//======================================================================================
+// class
+class Book{
+    public String name,author;
+
+// constructor
+    public Book(String name, String author) {
+        this.name = name;
+        this.author = author;
+    }
+
+    // to string
+// agr is method ko na add kro tu bhee program run ho ga lkin answer ghalat style sy sey ga
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "name='" + name + '\'' +
+                ", author='" + author + '\'' +
+                '}';
+    }
+
+}
+// class
+class MyLibrary{
+
+    public ArrayList<Book> books;
+//                         constructorn  press  alt insert
+    public MyLibrary(ArrayList<Book> books) {
+        this.books = books;
+    }
+
+//  methods jo k question me dyee gaey haen
+
+   public void addBook(Book book){
+        this.books.add(book);
+       System.out.println("the book has been added to the library");
+   }
+//.........................
+    public void issueBook(Book book,String issued_to){
+        this.books.remove(book);    //ye library sy issue ho chuky tu isko library sy remove kya
+       System.out.println("the book has been issued from the library" + issued_to);
+   }
+//.........................
+   public void returnBook(Book b){
+       this.books.add(b);
+       System.out.println("the book has been returned");
+   }
+
+}
+
+public class Exercise7solution113 {              //===================================================
+    public static void main(String[] args) {    //==================================================
+                /*
+create a library management sysytem which is capable of issuing books to the students
+book should have information like:
+1: book name
+2:book author
+3:issued to
+4:issued on
+
+user should be able to add books,return issued books,issue books
+assume that all the users are registered with their names in the central database
+*/
+
+//===============================================================================================
+        ArrayList<Book> bk = new ArrayList<>();
+
+
+        Book b1 = new Book("Baang a dra","Allama Iqbal");    // book name + author
+        bk.add(b1);
+
+        Book b2 = new Book("Serat u nbbi","Shibli Nomani");    // book name + author
+        bk.add(b2);
+
+        Book b3 = new Book("Pakistan Zindabaad","Zafar Ullah");    // book name + author
+        bk.add(b3);
+
+
+        MyLibrary l = new MyLibrary(bk);
+//
+l.addBook(new Book("Hindustan","Gandhi"));
+        System.out.println(l.books);
+
+        l.issueBook(b3,"Harry");
+        System.out.println(l.books);
+//=================================================================================================
+
+    }
+}

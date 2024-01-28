@@ -1,0 +1,62 @@
+package com.company;
+// iss me main method say uper methods likhay gay
+// the throw is a keyword used to throw an exception especially by the programmers
+// arithmatic exception k method me agr kisy int ko 0 say divode kiya tu vo error show kray ga
+//--------------------------------------------------------------------------------------------------------
+
+class NegativeRadiusException extends Exception{
+
+    // alt insert pr click kiya  aor phir ToString pr click kiya
+    @Override
+    public String toString() {
+        return "radius cannot be negative";
+    }
+
+    public String getMessage() {
+        return " I am getMessage so RADIUS can,t be negative";
+    }
+}
+
+public class ThrowVsThrows84 {     //=======================================================================
+
+    // method 2
+    public static double area(int r)throws NegativeRadiusException{
+
+        if (r<0){
+            throw new  NegativeRadiusException();
+        }
+
+        double result = Math.PI * r * r;
+        return result;
+    }
+
+
+    // method 1
+  public static int divide(int a, int b)throws ArithmeticException{
+                                    // made by Harry
+        int result = a/b;
+        return result;
+    }
+
+    public static void main(String[] args) {    //=======================================================
+
+        //     Shivam - uses divide function created by harry
+        try {
+           //  method 1 k liye
+
+//            int c = divide(6,0);
+//            System.out.println(c);
+
+            // methods 2 k liye
+
+            double ar = area(6);
+            System.out.println(ar);
+
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+//==================================================================================================
+    }
+}

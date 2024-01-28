@@ -1,0 +1,66 @@
+package com.company;
+/*=======================================================================================================
+ abstract method ka mtlb khiyali method >>>>>>abstract noun hkekt me nhi hotay jesay SOCHNA etc
+abstract method LAAAGO nhi hota bs declare kr dya jata hey
+ agr class me abstract method aey tu us class ko abstract bna day gay
+
+      abstract class me saRAY METHODS daal kr unhay bd me cal kya ja skta hey
+Misaal>>class shape say agr class circle rectangle bnana ho to agli classes k mthds abstrct me bna dygy
+======================================================================================================*/
+
+abstract class Parent2{        // abstract class me non abstract methods bhee hotay haen
+                        // constructor
+    public Parent2() {
+        System.out.println("i m constructor of parent2 class");
+    }
+                     // methods
+    public void sayHello(){
+        System.out.println("hello");
+    }
+
+// aik abstract method sary class ko abstract bna deta hey issy liye ab class say pehlay Abstract likhy
+    abstract public void greet1();
+    abstract public void greet2();
+}
+
+//-----------------------------------------------------------------------------------------------------
+//                                    abstract class can derived a concrete class in following way
+class Child2 extends Parent2{
+    @Override
+    public void greet1() {
+        System.out.println("good morning");
+    }
+    public void greet2() {
+        System.out.println("good afternoon");
+    }
+}
+//--------------------------------------------------------------------------------------------------
+
+//                                   abstract class can derive another abbstract class in following way
+//idhr agr abstract na lgao to error aey ga
+abstract class Child3 extends Parent2{
+    public void abc(){
+        System.out.println("i am good");
+    }
+}
+//--------------------------------------------------------------------------------------------------
+
+public class AbstractClass53 {
+    public static void main(String[] args) {
+
+//=====================================================================================================
+                // following two methods throw error
+//    Parent2 p = new Parent2();  >>>Parent2 aik abstract class hy is liye iska OBJECT nhi bnay ga
+//    Child3 c = new Child3();  >>>aik abstract class hey to object nhi bnay ga
+
+// following method is allowed because it is not abstract class  mtlb khiyali nhi hy
+    Child2 c2 = new Child2();
+    c2.sayHello();                 // sayHello abstract class parent2 ka method hy
+    c2.greet1();
+    c2.greet2();
+
+// idher child3 fzol hy us k methods use ni kr skty qk ye abstrct hy r kisy dosry clas ko derive ni kr rhy
+
+//=====================================================================================================
+    }
+}

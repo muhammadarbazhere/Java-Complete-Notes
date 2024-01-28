@@ -1,0 +1,89 @@
+package com.company;
+//====================================================================================================
+// interface 1
+interface MyCamera{
+                 void takeSnap();    // interface hey is liye agay body nhi bna sktay takeSnap ki
+                 void recordVideo();
+
+// private mothod ko implement nhi kya ja skta lkin agr default method
+// bhut bra ho jey tu uss me use kr skty haen
+     private void greet(){
+         System.out.println("good morning");
+     }
+     //     default method nechay implement nhi ho ga
+     default void record4kVideo(){
+         greet();
+         System.out.println("recording in 4k");
+     }
+}//-------------------------------
+// interface 2
+interface MyWifi{
+    String[]getNetworks();
+    void connectToNetwork(String network);
+}
+//--------------------------------------------------------------------------------------------------------
+// class 1
+class MyCellPhone{
+    void callNumber(int phoneNumber){
+        System.out.println("calling " + phoneNumber);
+    }
+    void pickCall(){
+        System.out.println("connecting...");
+    }
+
+}
+//;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+// class 2
+class MySmartPhone extends MyCellPhone implements MyCamera,MyWifi{
+//------------------
+   public void takeSnap(){                                   // from interface MyCamera
+        System.out.println("taking snap");
+    }
+//---------------------------------
+//    public void record4kVideo(){     // default method and it is not necessarily to implement it
+//        System.out.println("taking snap and recording in 4k");
+//    }
+//-------------------------------
+    public void recordVideo() {
+        System.out.println("recording video");       // from interface MyCamera
+    }
+//-----------------------------------
+    public String[] getNetworks() {                              // from interface MyWifi
+        System.out.println("getting list of networks");
+
+        String[] networkList = {"harry","shubam","arbaz"};
+        return networkList;
+    }
+//---------------------------------------
+    public void connectToNetwork(String network) {              // from interface MyWifi
+        System.out.println("Connecting to " + network);
+    }
+//-------------------------------------
+}
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+public class defaultMethods57 {
+    public static void main(String[] args) {
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        MySmartPhone ms = new MySmartPhone();
+
+        ms.record4kVideo();
+
+//      ms.greet();            throws errorye ek private mthod hy tu iss liye isko idher drect nhi
+//                                              use kr skty lkin default method me istmaal kr skty haen
+
+   ms.callNumber(104163789);
+
+
+
+
+        String[] array =  ms.getNetworks();
+        for (String element:array) {
+            System.out.println(element);
+        }
+
+//=====================================================================================================
+    }
+}

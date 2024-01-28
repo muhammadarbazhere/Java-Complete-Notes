@@ -1,0 +1,41 @@
+package com.company;
+import java.util.Scanner;
+
+
+//   boolean me hasnextint use hota hy kaksr jo true ya false btata hy
+
+public class TakingInput5 {
+    public static void main(String[] args) {
+//-------------------------------------------------------------------------------------------------
+
+        System.out.println("taking input from the user");
+       Scanner sc=new Scanner(System.in);  // system.in   ka mtlb hy k me keyboard sy input lena chahta hon
+
+        System.out.println("Enter number 01");
+        int a = sc.nextInt();
+       // float a = sc.nextInt();
+
+        System.out.println("Enter number 02");
+        int b = sc.nextInt();
+       // float b = sc.nextInt();
+
+        int sum = a+b;
+       // float sum = a+b;
+        System.out.println("The sum of these numbers is");
+        System.out.println(sum);
+
+//----------------------------------------------------------------------------------------
+
+//         boolean   ye btata hy k integer   int hy ya nhi hy
+//        boolean b1 = sc.hasNextInt();
+//        System.out.println(b1);
+
+//------------------------------------------------------------------------------------------
+
+//          String str = sc.nextLine();
+//        System.out.println(str);  // jo name input kray gy  vo String me show ho ga
+//------------------------------------------------------------------------------------------
+
+    }
+}
+

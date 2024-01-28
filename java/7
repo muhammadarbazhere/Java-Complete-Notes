@@ -1,0 +1,69 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class PractiseSet7 {
+    public static void main(String[] args) {
+//-----------------------------------------------------------------------------------------------------
+//q1
+// write a programme to sum three numbers
+//        int a = 2;
+//        int b = 3;
+//        int c = 4;
+//        int sum = a+ b +c;
+//        System.out.println(sum);
+//-------------------------------------------------------------------------------------------------------
+
+//q2
+//a programme to calculate CGPA using marks of three subjects
+        // CGPA ka mtlb hy marks out of 10
+
+        // result isharia me aa jata hy iss liye float use kray gy
+        // sub1 ka out of   10
+        //sub2 ka out of    10
+        //sub3 ka out of    10
+        //                         10 + 10 + 10 = 30
+        // agr percentage hoty tu jamma kr k divide by 100 krtay
+        //lkin   CGPA ka result out of 10 hota
+
+//        float subject1 = 71f;        // f
+//        float subject2 = 82f;
+//        float subject3 = 93f;
+//        float cgpa = (subject1 + subject2 + subject3)/30;
+//        System.out.println(cgpa);
+//----------------------------------------------------------------------------------------------------
+
+
+//q3
+//programme which ask user to enter his name and greet him with "Hello <name> have a good day"
+//
+//         System.out.println("What is your name");
+//         Scanner sc = new Scanner(System.in);
+//                String name = sc.next();
+//         System.out.println("hello "+name+ " have a good day");
+//-----------------------------------------------------------------------------------------------------
+
+
+//q4
+//write a ajava programme to convert killo meter to miles
+
+        double kilometers;
+        System.out.println("enter killometers");
+        Scanner sc = new Scanner(System.in);
+        kilometers = sc.nextDouble();
+
+double miles = kilometers / 1.6;
+        System.out.print(miles + " miles");
+//------------------------------------------------------------------------------------------------------
+
+//q5
+//is given nmbr is Integer or not?
+//
+//        System.out.println("Enter your number");
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println(sc.hasNextInt());
+//--------------------------------------------------------------------------------------------------------
+
+    }
+}
+

@@ -1,0 +1,28 @@
+package com.company;
+
+//............ALL THESE METHODS ARE DEPRICATED......................
+// ye methods pehlay allow thay   ab recomended nhi haen............
+// video 99 k methods ab recomended haen............................
+//.................................................................
+
+import java.util.Date;
+
+public class DateClass97 {
+    public static void main(String[] args) {
+//=================================================================================================
+// java years ko 1900 say count krta hy
+
+//  what is date class?
+              Date d = new Date();
+              System.out.println(d);
+// java date class has many constructor like:   see from java docs
+
+        System.out.println(d.getTime()); //milliseconds me time btaeye ga    1 jan 1970 say abhee tk
+        System.out.println(d.getDate());
+        System.out.println(d.getMinutes());
+        System.out.println(d.getYear());   // java years ko 1900 say count krta hy
+
+// iss k perfect methods jo aj kl recomended haen unko agli videos me biyan kiya hy
+//------------------------------------------------------------------------------------------------
+    }
+}

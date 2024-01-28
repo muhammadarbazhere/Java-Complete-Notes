@@ -1,0 +1,21 @@
+package com.company;
+
+public class Exercise5video68 {
+    public static void main(String[] args) {
+
+
+/*
+write this code in notepad
+
+you have to create a package named com.codewithharry.shape
+this package should have individual classes for rectangle, square,circle,cylinder,sphere
+these classes should have use inheritance to properly manage the code!
+
+include methods like volume,surface area and getter/setter for dimensions
+
+ */
+
+// is k answer vs code k folder  Arbaz k andr Exercise5solution77  me hey
+
+    }
+}

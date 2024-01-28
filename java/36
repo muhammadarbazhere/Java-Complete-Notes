@@ -1,0 +1,9 @@
+package com.company;
+
+public class introOfOOP36 {
+    public static void main(String[] args) {
+
+        // OOP = object oriented programming
+
+    }
+}

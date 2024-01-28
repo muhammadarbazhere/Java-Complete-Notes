@@ -1,0 +1,73 @@
+package com.company;
+                       // finally{}  hr haal me run hoga
+
+public class FinallyBlock85 {  //========================================================================
+
+    // Example 1
+    public static int greet() {
+        try {
+            int a = 50;
+            int b = 0;
+            int c = a / b;
+            return c;
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+
+        // agr idher finally lgaey gay tbhi cleaning up resources ho ga     agr nhi lgey ga
+        // tu ye jidher Return c; krta haey  udher tk ho k ruk jaey gq
+        finally {
+            System.out.println("Cleaning up the resources.......this is the end of this function");
+        }
+         return 0;
+
+    }
+
+
+
+    public static void main(String[] args) {      //=====================================================
+
+            greet();   // agr srf greet ko call kiya tu ye  return c;  tk chal kr ruk jaey ga
+//        System.out.println("BUT");
+//            int k = greet();
+//        System.out.println(k);
+
+//-------------------------------------------
+
+
+//        // finally ki Example 2
+//        int a = 7;
+//        int b = 9;
+//
+//        while (true){
+//            try {
+//                System.out.println(a/b);
+//            }
+//            catch (Exception e){
+//                System.out.println(e);
+//                break;
+//            }
+//
+//            finally {
+//                System.out.println("i am finally for the value of b = " +b);
+//            }
+// b--;      // agr idher b--; na lgaey tu ye infinite uper ki traf chlta jaey ga  9  10  11 12 aesay infinite
+//
+//        }
+//// try ko catch k bagher nhi likha ja skta lkin
+//             //   try ko finally k saath likha ja skta hey
+//                                                     // baghaer catch k
+//
+//        try {
+//            System.out.println("i am try without catch");
+//        }
+//        //agr try me koi Exception aa bhee jaey   tu phir bhee finally
+//                                    // run ho kr rhay ga
+//     finally {
+//            System.out.println("i am finally with try   and   with out catch");
+//        }
+
+//=====================================================================================================
+    }
+}

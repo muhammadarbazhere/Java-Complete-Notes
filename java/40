@@ -1,0 +1,48 @@
+package com.company;
+
+//there are four types of access modifier in java
+          // 1; private      2; default    3; protected    4;  public
+
+// Getter returns the value
+// Setter sets the value
+
+// nechay example dy gaey hy
+//-------------------------------------------------------------------------------------------
+class MyEmployee{
+   private int id;
+   private String name;
+                         // Getter
+    public String getName() {
+        return name;
+    }
+    public int getId() {
+        return id;
+    }
+                        // Setter
+    public void setName(String n) {                                   // void wala method return ni krta
+        name = n;
+    }
+    public void setId(int i) {
+        id = i;
+    }
+
+}
+
+public class AccessModifiersGettersSetters40 {         //-------------------------------------------------
+    public static void main(String[] args) {           //-------------------------------------------------
+
+        MyEmployee harry = new MyEmployee();
+
+//        harry.id = 45;
+//        harry.name = "code with harry";    >>>> it shows an error because id and name are private here
+
+        harry.setName("code with harry");
+        System.out.println(harry.getName());
+
+        harry.setId(234);
+        System.out.println(harry.getId());
+//--------------------------------------------------------------------------------------------------------
+
+    }
+}
+s
